@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>¿Qué es el Internet Dedicado? | Internet Empresarial y para Eventos en México</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO básico -->
+    <meta name="description" content="¿Qué es el Internet Dedicado? Explicación técnica, comparativa con Internet SD-WAN, enlaces T1/T2 y Starlink. Internet empresarial, simétrico y para eventos en Ciudad de México y todo México.">
+    <meta name="keywords" content="internet dedicado, internet empresarial, internet para eventos, internet simétrico, internet dedicado Ciudad de México, proveedor de internet en México, distribuidor autorizado Starlink, Flonetworks, Cirion, Cogent, internet por fibra óptica, internet SD-WAN, internet corporativo">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="¿Qué es el Internet Dedicado? | Internet Empresarial y para Eventos en México">
+    <meta property="og:description" content="Diferencias técnicas entre Internet Dedicado, SD-WAN, enlaces T1/T2 y Starlink. Soluciones para empresas, eventos y proyectos críticos en México.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tudominio.com/internet-dedicado">
+    <meta property="og:image" content="https://tudominio.com/imagenes/og/internet-dedicado-mexico.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="¿Qué es el Internet Dedicado? | Internet Empresarial y para Eventos en México">
+    <meta name="twitter:description" content="Guía técnica de Internet Dedicado, SD-WAN, Starlink y fibra óptica para empresas y eventos en México.">
+    <meta name="twitter:image" content="https://tudominio.com/imagenes/og/internet-dedicado-mexico.jpg">
+
+    <!-- Datos estructurados simples (Organization + Service) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Internet Dedicado Empresarial",
+      "provider": {
+        "@type": "Organization",
+        "name": "CiBERALL® - The Internet Company",
+        "url": "https://tudominio.com",
+        "logo": "https://tudominio.com/imagenes/logo-ciberall.png"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "México"
+      },
+      "serviceType": [
+        "Internet dedicado",
+        "Internet empresarial",
+        "Internet para eventos",
+        "Internet simétrico",
+        "Internet SD-WAN",
+        "Internet por fibra óptica"
+      ]
+    }
+    </script>
+
+    <style>
+        /* Estilos mínimos, puedes reemplazarlos por tu hoja CSS */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #111827;
+            background-color: #ffffff;
+        }
+        header, section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .hero {
+            padding: 3rem 1.5rem 2rem;
+        }
+        .hero-title {
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: #4b5563;
+            max-width: 680px;
+        }
+        .badge {
+            display: inline-block;
+            font-size: 0.8rem;
+            padding: 0.25rem 0.7rem;
+            border-radius: 999px;
+            background: #e5f3ff;
+            color: #0f766e;
+            margin-bottom: 0.75rem;
+        }
+        .cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .btn-primary, .btn-secondary {
+            display: inline-block;
+            padding: 0.8rem 1.4rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .btn-primary {
+            background: #0f766e;
+            color: #ffffff;
+        }
+        .btn-secondary {
+            border: 1px solid #0f766e;
+            color: #0f766e;
+            background: #ffffff;
+        }
+        h2 {
+            font-size: 1.7rem;
+            margin-top: 2rem;
+        }
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 1.2rem;
+        }
+        p {
+            margin: 0.5rem 0 0.75rem;
+        }
+        ul {
+            padding-left: 1.25rem;
+            margin: 0.4rem 0 1rem;
+        }
+        li {
+            margin-bottom: 0.3rem;
+        }
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+        @media (min-width: 900px) {
+            .grid-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            .grid-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+        .card {
+            border-radius: 0.8rem;
+            border: 1px solid #e5e7eb;
+            padding: 1.2rem;
+            background-color: #ffffff;
+        }
+        .card-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #6b7280;
+            margin-bottom: 0.4rem;
+        }
+        .card-title {
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        th, td {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid #e5e7eb;
+            text-align: left;
+        }
+        th {
+            background-color: #f3f4f6;
+        }
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+        .tag-cloud span {
+            font-size: 0.8rem;
+            background-color: #f3f4f6;
+            border-radius: 999px;
+            padding: 0.25rem 0.7rem;
+        }
+        .section-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #9ca3af;
+            margin-bottom: 0.4rem;
+        }
+        footer {
+            border-top: 1px solid #e5e7eb;
+            margin-top: 2rem;
+            padding: 1.5rem;
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <div class="badge">Internet Dedicado · Internet Empresarial · Internet para Eventos</div>
+    <h1 class="hero-title">¿Qué es el Internet Dedicado?</h1>
+    <p class="hero-subtitle">
+        Descubre la diferencia real entre el <strong>Internet Dedicado</strong>, el <strong>Internet SD-WAN</strong>,
+        los enlaces <strong>T1/T2</strong> y las soluciones vía <strong>Starlink</strong>. 
+        Conoce cómo elegir la mejor opción para tu empresa, tus eventos y tus operaciones de misión crítica 
+        en Ciudad de México y en todo México.
+    </p>
+    <div class="cta-row">
+        <a href="#contacto" class="btn-primary">Cotizar Internet Dedicado</a>
+        <a href="#comparativa" class="btn-secondary">Ver comparativa técnica</a>
+    </div>
+</header>
+
+<main>
+
+    <section id="que-es">
+        <div class="section-label">Definición técnica</div>
+        <h2>Internet Dedicado: tu carril exclusivo en la autopista de Internet</h2>
+        <p>
+            El <strong>Internet Dedicado</strong> es un servicio de conectividad <strong>simétrico, garantizado y no compartido</strong>,
+            diseñado para que una organización cuente con <strong>ancho de banda exclusivo</strong>, latencia baja y desempeño 
+            constante, incluso en horarios de máxima demanda.
+        </p>
+        <p>
+            A diferencia de los servicios residenciales o “best effort”, el Internet Dedicado está pensado como un 
+            <strong>activo estratégico</strong> para aplicaciones empresariales, servicios en la nube, streaming profesional,
+            videoconferencias, redes de voz y datos, y cualquier entorno donde la caída del enlace no sea una opción.
+        </p>
+
+        <div class="grid grid-2">
+            <div class="card">
+                <div class="card-tag">Características clave</div>
+                <div class="card-title">Internet Dedicado Empresarial</div>
+                <ul>
+                    <li>Velocidades simétricas (subida = bajada).</li>
+                    <li>Ancho de banda no compartido: lo que contratas es lo que recibes.</li>
+                    <li>SLAs empresariales del 99.9% al 99.99%.</li>
+                    <li>Rutas premium con carriers Tier-1 y Tier-2 (Cogent, Cirion, Flonetworks, etc.).</li>
+                    <li>IP pública fija, BGP y soporte para sistemas autónomos (ASN).</li>
+                    <li>Monitoreo proactivo y soporte técnico especializado.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-tag">Tecnología subyacente</div>
+                <div class="card-title">Fibra óptica e infraestructura carrier-grade</div>
+                <p>
+                    El Internet Dedicado suele operar sobre <strong>fibra óptica dedicada</strong>, enlaces metropolitanos 
+                    y equipamiento carrier-grade. Esto se traduce en latencias ultra bajas y alta disponibilidad, 
+                    ideales para <strong>Internet empresarial, Internet simétrico e Internet para eventos</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparativa">
+        <div class="section-label">Comparativa técnica</div>
+        <h2>Internet Dedicado vs SD-WAN vs Best Effort</h2>
+        <p>
+            Cuando se evalúa infraestructura de red, es crítico entender las diferencias entre 
+            <strong>Internet Dedicado</strong>, <strong>Internet SD-WAN</strong> y servicios 
+            <strong>best effort</strong> residenciales o de oficina pequeña.
+        </p>
+
+        <h3>1. Internet Dedicado</h3>
+        <ul>
+            <li><strong>Tecnología:</strong> Última milla por fibra óptica dedicada o microondas empresarial.</li>
+            <li><strong>Velocidad:</strong> Garantizada (10 Mbps a 10 Gbps, según diseño).</li>
+            <li><strong>Simetría:</strong> Sí, subida y bajada iguales.</li>
+            <li><strong>Latencia:</strong> Estable y ultra baja.</li>
+            <li><strong>Uso ideal:</strong> Empresas, data centers, servicios cloud, voz, video y misión crítica.</li>
+        </ul>
+
+        <h3>2. Internet SD-WAN (Internet Definido por Software)</h3>
+        <p>
+            La <strong>SD-WAN</strong> no es un tipo de enlace físico, sino una capa de orquestación inteligente 
+            que permite combinar múltiples enlaces (fibra, Starlink, LTE/5G, xDSL, etc.) para mejorar disponibilidad 
+            y rendimiento.
+        </p>
+        <ul>
+            <li><strong>Tecnología:</strong> Orquestación y encriptación sobre múltiples proveedores.</li>
+            <li><strong>Ventaja clave:</strong> Bonding, failover automático, balanceo, QoS y priorización de tráfico crítico.</li>
+            <li><strong>Velocidad:</strong> Resultante de la suma de varios enlaces.</li>
+            <li><strong>Uso ideal:</strong> Sucursales, retail, redes distribuidas, conexiones híbridas y contingencias.</li>
+        </ul>
+
+        <h3>3. Enlaces Best Effort (residenciales/masivos)</h3>
+        <ul>
+            <li><strong>Tecnología:</strong> Fibra compartida, HFC o inalámbrico residencial.</li>
+            <li><strong>Velocidad:</strong> Variable, depende del consumo de la zona.</li>
+            <li><strong>Simetría:</strong> No, la subida suele ser mucho menor que la bajada.</li>
+            <li><strong>Uso ideal:</strong> Hogar, oficinas pequeñas sin aplicaciones críticas.</li>
+        </ul>
+    </section>
+
+    <section id="starlink">
+        <div class="section-label">Internet Satelital</div>
+        <h2>Internet Dedicado vs Starlink (LEO)</h2>
+        <p>
+            <strong>Starlink</strong> ha cambiado el juego en zonas remotas y escenarios de movilidad. Sin embargo,
+            su modelo es <strong>best effort premium</strong>, mientras que el Internet Dedicado ofrece capacidad garantizada
+            sobre fibra óptica u otros medios dedicados.
+        </p>
+
+        <div class="table-wrapper">
+            <table aria-label="Comparativa Internet Dedicado vs Starlink">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Internet Dedicado</th>
+                        <th>Starlink (LEO)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ancho de banda</td>
+                        <td>Garantizado (simétrico y dedicado)</td>
+                        <td>No garantizado (best effort)</td>
+                    </tr>
+                    <tr>
+                        <td>Simetría</td>
+                        <td>Sí</td>
+                        <td>No siempre</td>
+                    </tr>
+                    <tr>
+                        <td>Latencia típica</td>
+                        <td>2–10 ms (según diseño)</td>
+                        <td>20–60 ms aproximados</td>
+                    </tr>
+                    <tr>
+                        <td>Perfil de uso</td>
+                        <td>Empresas, data centers, misión crítica</td>
+                        <td>Zonas rurales, movilidad, respaldo</td>
+                    </tr>
+                    <tr>
+                        <td>Naturaleza del servicio</td>
+                        <td>Dedicado, SLA estricto</td>
+                        <td>Best effort, sujeto a congestión satelital</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>
+            Una arquitectura moderna puede combinar <strong>Internet Dedicado + Starlink + SD-WAN</strong> para obtener 
+            alta disponibilidad, balanceo y resiliencia: fibra como enlace principal, Starlink como respaldo y SD-WAN 
+            gestionando el tráfico de forma inteligente.
+        </p>
+    </section>
+
+    <section id="t1-t2">
+        <div class="section-label">Herencia tecnológica</div>
+        <h2>Enlaces T1/T2 vs Internet Dedicado moderno</h2>
+        <p>
+            Los enlaces <strong>T1 (1.544 Mbps)</strong> y <strong>T2 (6.312 Mbps)</strong> fueron durante años el estándar 
+            del Internet empresarial. Hoy, las soluciones de <strong>Internet Dedicado por fibra óptica</strong> ofrecen 
+            velocidades desde decenas de megas hasta múltiples gigabits, con menor latencia y mejores costos por Mbps.
+        </p>
+        <p>
+            En muchos proyectos actuales, los T1/T2 se mantienen solo por compatibilidad con entornos legacy. 
+            En nuevos despliegues, el camino natural es <strong>Internet Dedicado por fibra + SD-WAN + Starlink</strong>.
+        </p>
+    </section>
+
+    <section id="casos-uso">
+        <div class="section-label">Casos de uso</div>
+        <h2>Casos de uso: empresas, eventos y operaciones críticas</h2>
+
+        <div class="grid grid-3">
+            <div class="card">
+                <div class="card-tag">Internet empresarial</div>
+                <div class="card-title">Internet Dedicado para empresas</div>
+                <p>
+                    Conectividad simétrica para ERP, CRM, VPN, telefonía IP, videoconferencias, almacenamiento en la nube
+                    y aplicaciones SaaS. Ideal para sedes corporativas y oficinas centrales.
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-tag">Eventos y transmisiones</div>
+                <div class="card-title">Internet para eventos</div>
+                <p>
+                    Enlaces dedicados para expos, congresos, conciertos, ferias y transmisiones en vivo. 
+                    Diseño de red, Wi-Fi profesional, redundancia con SD-WAN y Starlink como respaldo.
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-tag">Simetría y control</div>
+                <div class="card-title">Internet simétrico y SD-WAN</div>
+                <p>
+                    Servicios simétricos con QoS, priorización de tráfico, segmentación por VLAN y conexión directa 
+                    a nubes públicas. Ideal para organizaciones distribuidas y sucursales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cdmx">
+        <div class="section-label">Cobertura</div>
+        <h2>Internet Dedicado en Ciudad de México y todo México</h2>
+        <p>
+            La <strong>Ciudad de México</strong> es uno de los hubs de telecomunicaciones más importantes de América Latina. 
+            Desde aquí es posible diseñar soluciones de <strong>Internet Dedicado, Internet Empresarial, Internet simétrico</strong> 
+            e <strong>Internet para eventos</strong> para cualquier región del país.
+        </p>
+        <p>
+            Trabajamos con carriers y redes de alta capacidad como:
+        </p>
+        <ul>
+            <li><strong>Cogent</strong></li>
+            <li><strong>Cirion</strong> (antes Lumen)</li>
+            <li><strong>Flonetworks</strong></li>
+            <li>Operadores de fibra óptica metropolitana y larga distancia</li>
+            <li>Operadores satelitales como <strong>Starlink</strong></li>
+        </ul>
+        <p>
+            Esto permite entregar soluciones de <strong>Internet dedicado en Ciudad de México</strong> y 
+            <strong>servicios de Internet empresarial en todo México</strong>, alineadas con los niveles de servicio 
+            que exige cada proyecto.
+        </p>
+    </section>
+
+    <section id="seo-keywords">
+        <div class="section-label">Optimización SEO</div>
+        <h2>Palabras clave relacionadas</h2>
+        <p>
+            Esta página está optimizada para búsquedas como:
+            <strong>Internet dedicado, Internet empresarial, Internet para eventos, Internet simétrico, 
+            Internet dedicado en Ciudad de México, proveedor de servicios de Internet en México, 
+            distribuidor autorizado Starlink, Flonetworks, Cirion, Cogent, Internet por fibra óptica, Internet SD-WAN</strong>.
+        </p>
+        <div class="tag-cloud">
+            <span>Internet dedicado</span>
+            <span>Internet empresarial</span>
+            <span>Internet para eventos</span>
+            <span>Internet simétrico</span>
+            <span>Internet dedicado CDMX</span>
+            <span>Proveedor de Internet en México</span>
+            <span>Distribuidor autorizado Starlink</span>
+            <span>Flonetworks</span>
+            <span>Cirion</span>
+            <span>Cogent</span>
+            <span>Internet por fibra óptica</span>
+            <span>Internet SD-WAN</span>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="section-label">Siguiente paso</div>
+        <h2>¿Necesitas Internet Dedicado o SD-WAN para tu empresa o evento?</h2>
+        <p>
+            Diseñamos soluciones a la medida para <strong>empresas, gobiernos, industria, sedes corporativas y eventos</strong> 
+            en Ciudad de México y en todo México. Integramos <strong>Internet Dedicado, Internet por fibra óptica, SD-WAN, 
+            Starlink y carriers como Flonetworks, Cirion y Cogent</strong>.
+        </p>
+        <p><strong>Completa el formulario o contáctanos para recibir una propuesta técnica y económica detallada.</strong></p>
+
+        <!-- Reemplaza este bloque con tu formulario real -->
+        <form action="/enviar-formulario" method="post">
+            <div class="grid grid-2">
+                <div>
+                    <label for="nombre">Nombre *</label><br>
+                    <input type="text" id="nombre" name="nombre" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
+                </div>
+                <div>
+                    <label for="empresa">Empresa *</label><br>
+                    <input type="text" id="empresa" name="empresa" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
+                </div>
+            </div>
+            <div class="grid grid-2">
+                <div>
+                    <label for="email">Correo electrónico *</label><br>
+                    <input type="email" id="email" name="email" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono / WhatsApp</label><br>
+                    <input type="tel" id="telefono" name="telefono" style="width:100%;padding:0.5rem;margin:0.3rem 0;">
+                </div>
+            </div>
+            <div>
+                <label for="tipo-servicio">Tipo de servicio requerido *</label><br>
+                <select id="tipo-servicio" name="tipo_servicio" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
+                    <option value="">Selecciona una opción</option>
+                    <option value="internet-dedicado">Internet Dedicado Empresarial</option>
+                    <option value="internet-eventos">Internet para Eventos</option>
+                    <option value="internet-simetrico">Internet Simétrico</option>
+                    <option value="sd-wan">Internet SD-WAN</option>
+                    <option value="starlink">Internet Satelital (Starlink)</option>
+                    <option value="fibra-optica">Internet por Fibra Óptica</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensaje">Cuéntanos tu proyecto</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" style="width:100%;padding:0.5rem;margin:0.3rem 0;"></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="margin-top:0.8rem;">Enviar solicitud</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div style="max-width:1100px;margin:0 auto;">
+        <strong>CiBERALL® – The Internet Company</strong><br>
+        Proveedor de servicios de Internet en todo México · Internet Dedicado · Internet Empresarial · Internet para Eventos · Internet SD-WAN · Distribuidor autorizado Starlink
+    </div>
+</footer>
+
+</body>
+</html>

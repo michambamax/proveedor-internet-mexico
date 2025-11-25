@@ -2,25 +2,25 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>¿Qué es el Internet Dedicado? | Internet Empresarial y para Eventos en México</title>
+    <title>¿Qué es el Internet Dedicado? | CiBERALL® Internet Empresarial en México</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO básico -->
-    <meta name="description" content="¿Qué es el Internet Dedicado? Explicación técnica, comparativa con Internet SD-WAN, enlaces T1/T2 y Starlink. Internet empresarial, simétrico y para eventos en Ciudad de México y todo México.">
-    <meta name="keywords" content="internet dedicado, internet empresarial, internet para eventos, internet simétrico, internet dedicado Ciudad de México, proveedor de internet en México, distribuidor autorizado Starlink, Flonetworks, Cirion, Cogent, internet por fibra óptica, internet SD-WAN, internet corporativo">
+    <meta name="description" content="¿Qué es el Internet Dedicado? Explicación técnica y comparativa con Internet SD-WAN, enlaces T1/T2 y Starlink. Soluciones de Internet empresarial, simétrico y para eventos en Ciudad de México y todo México.">
+    <meta name="keywords" content="internet dedicado, internet empresarial, internet para eventos, internet simétrico, internet dedicado Ciudad de México, proveedor de internet en México, distribuidor autorizado Starlink, Flonetworks, Cirion, Cogent, internet por fibra óptica, internet SD-WAN, CiBERALL">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="¿Qué es el Internet Dedicado? | Internet Empresarial y para Eventos en México">
+    <meta property="og:title" content="¿Qué es el Internet Dedicado? | CiBERALL® Internet Empresarial en México">
     <meta property="og:description" content="Diferencias técnicas entre Internet Dedicado, SD-WAN, enlaces T1/T2 y Starlink. Soluciones para empresas, eventos y proyectos críticos en México.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tudominio.com/internet-dedicado">
-    <meta property="og:image" content="https://tudominio.com/imagenes/og/internet-dedicado-mexico.jpg">
+    <meta property="og:image" content="https://lonso.net/imagenes/internet-dedicado-mexico.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="¿Qué es el Internet Dedicado? | Internet Empresarial y para Eventos en México">
+    <meta name="twitter:title" content="¿Qué es el Internet Dedicado? | CiBERALL® Internet Empresarial en México">
     <meta name="twitter:description" content="Guía técnica de Internet Dedicado, SD-WAN, Starlink y fibra óptica para empresas y eventos en México.">
-    <meta name="twitter:image" content="https://tudominio.com/imagenes/og/internet-dedicado-mexico.jpg">
+    <meta name="twitter:image" content="https://lonso.net/imagenes/internet-dedicado-mexico.jpg">
 
     <!-- Datos estructurados simples (Organization + Service) -->
     <script type="application/ld+json">
@@ -32,7 +32,7 @@
         "@type": "Organization",
         "name": "CiBERALL® - The Internet Company",
         "url": "https://tudominio.com",
-        "logo": "https://tudominio.com/imagenes/logo-ciberall.png"
+        "logo": "https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png"
       },
       "areaServed": {
         "@type": "Country",
@@ -49,48 +49,120 @@
     }
     </script>
 
+    <!-- Fuentes: Russo One para títulos, Exo para texto -->
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Exo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <style>
-        /* Estilos mínimos, puedes reemplazarlos por tu hoja CSS */
+        :root {
+            --bg: #000000;
+            --text: #3399CC;
+            --button: #FF6F00;
+            --accent: #A8FF00;
+            --card-bg: rgba(0, 0, 0, 0.75);
+            --border-soft: rgba(255, 111, 0, 0.4);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             margin: 0;
             padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: "Exo", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             line-height: 1.6;
-            color: #111827;
-            background-color: #ffffff;
         }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
         header, section {
             max-width: 1100px;
             margin: 0 auto;
             padding: 1.5rem;
         }
+
         .hero {
-            padding: 3rem 1.5rem 2rem;
+            padding: 2.5rem 1.5rem 2rem;
+            background-image:
+                linear-gradient(135deg, rgba(0,0,0,0.85), rgba(0,0,0,0.6)),
+                url("https://lonso.net/imagenes/internet-dedicado-mexico.jpg");
+            background-size: cover;
+            background-position: center;
+            border-bottom: 1px solid var(--border-soft);
         }
-        .hero-title {
-            font-size: 2.4rem;
-            margin-bottom: 0.5rem;
+
+        .hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
         }
-        .hero-subtitle {
-            font-size: 1.1rem;
-            color: #4b5563;
-            max-width: 680px;
+
+        .brand-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
         }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo img {
+            max-height: 52px;
+            height: auto;
+            width: auto;
+        }
+
+        .brand-text {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--accent);
+            opacity: 0.9;
+        }
+
         .badge {
             display: inline-block;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             padding: 0.25rem 0.7rem;
             border-radius: 999px;
-            background: #e5f3ff;
-            color: #0f766e;
+            background: rgba(0,0,0,0.6);
+            border: 1px solid var(--accent);
+            color: var(--accent);
             margin-bottom: 0.75rem;
         }
+
+        .hero-title {
+            font-family: "Russo One", system-ui, sans-serif;
+            font-size: 2.4rem;
+            margin: 0 0 0.5rem;
+            color: #ffffff;
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            color: #e5f3ff;
+            max-width: 720px;
+        }
+
         .cta-row {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
             margin-top: 1.5rem;
         }
+
         .btn-primary, .btn-secondary {
             display: inline-block;
             padding: 0.8rem 1.4rem;
@@ -98,38 +170,63 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 0.95rem;
+            cursor: pointer;
+            border: 1px solid var(--button);
+            transition: all 0.18s ease-out;
         }
+
         .btn-primary {
-            background: #0f766e;
+            background: var(--button);
             color: #ffffff;
         }
-        .btn-secondary {
-            border: 1px solid #0f766e;
-            color: #0f766e;
-            background: #ffffff;
+        .btn-primary:hover {
+            background: #ff8f33;
+            border-color: #ff8f33;
+            text-decoration: none;
         }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent);
+        }
+        .btn-secondary:hover {
+            background: rgba(255, 111, 0, 0.12);
+            text-decoration: none;
+        }
+
         h2 {
+            font-family: "Russo One", system-ui, sans-serif;
             font-size: 1.7rem;
             margin-top: 2rem;
+            color: #ffffff;
         }
+
         h3 {
-            font-size: 1.2rem;
-            margin-top: 1.2rem;
+            font-family: "Russo One", system-ui, sans-serif;
+            font-size: 1.15rem;
+            margin-top: 1.25rem;
+            color: var(--accent);
         }
+
         p {
             margin: 0.5rem 0 0.75rem;
+            color: var(--text);
         }
+
         ul {
             padding-left: 1.25rem;
             margin: 0.4rem 0 1rem;
         }
+
         li {
             margin-bottom: 0.3rem;
         }
+
         .grid {
             display: grid;
             gap: 1.5rem;
         }
+
         @media (min-width: 900px) {
             .grid-2 {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -138,82 +235,190 @@
                 grid-template-columns: repeat(3, minmax(0, 1fr));
             }
         }
+
         .card {
-            border-radius: 0.8rem;
-            border: 1px solid #e5e7eb;
+            border-radius: 0.9rem;
+            border: 1px solid var(--border-soft);
             padding: 1.2rem;
-            background-color: #ffffff;
+            background-color: var(--card-bg);
+            backdrop-filter: blur(8px);
         }
+
         .card-tag {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #6b7280;
-            margin-bottom: 0.4rem;
+            letter-spacing: 0.12em;
+            color: #9ca3af;
+            margin-bottom: 0.35rem;
         }
+
         .card-title {
             font-weight: 600;
             margin-bottom: 0.4rem;
+            color: #ffffff;
         }
+
         .table-wrapper {
             overflow-x: auto;
             margin: 1rem 0;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             font-size: 0.9rem;
         }
         th, td {
-            padding: 0.5rem 0.75rem;
-            border: 1px solid #e5e7eb;
+            padding: 0.55rem 0.75rem;
+            border: 1px solid rgba(148, 163, 184, 0.4);
             text-align: left;
         }
         th {
-            background-color: #f3f4f6;
+            background-color: rgba(15, 23, 42, 0.9);
+            color: #f9fafb;
         }
+        tr:nth-child(even) td {
+            background-color: rgba(15, 23, 42, 0.65);
+        }
+
         .tag-cloud {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
             margin-top: 0.75rem;
         }
+
         .tag-cloud span {
-            font-size: 0.8rem;
-            background-color: #f3f4f6;
+            font-size: 0.78rem;
+            background-color: rgba(51, 153, 204, 0.12);
             border-radius: 999px;
             padding: 0.25rem 0.7rem;
+            border: 1px solid rgba(51, 153, 204, 0.4);
         }
+
         .section-label {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
-            letter-spacing: 0.12em;
-            color: #9ca3af;
+            letter-spacing: 0.16em;
+            color: #6b7280;
             margin-bottom: 0.4rem;
         }
+
+        /* Redes sociales */
+        .social-section {
+            border-top: 1px solid var(--border-soft);
+            border-bottom: 1px solid var(--border-soft);
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .social-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .social-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .social-item img {
+            width: 28px;
+            height: 28px;
+            border-radius: 999px;
+            display: block;
+        }
+
+        .social-item span {
+            font-size: 0.85rem;
+        }
+
+        /* Contacto */
+        .contact-section {
+            border-top: 1px solid var(--border-soft);
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 3fr 2fr;
+            }
+        }
+
+        .contact-lines p {
+            margin: 0.25rem 0;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        /* Formulario */
+        form input,
+        form select,
+        form textarea {
+            background-color: rgba(15, 23, 42, 0.9);
+            border: 1px solid rgba(51, 153, 204, 0.7);
+            color: #e5f3ff;
+            border-radius: 0.45rem;
+        }
+
+        label {
+            font-size: 0.85rem;
+            color: #9ca3af;
+        }
+
+        /* Footer */
         footer {
-            border-top: 1px solid #e5e7eb;
+            border-top: 1px solid var(--border-soft);
             margin-top: 2rem;
             padding: 1.5rem;
-            font-size: 0.85rem;
-            color: #6b7280;
+            font-size: 0.8rem;
+            color: #9ca3af;
+        }
+
+        footer a {
+            color: var(--accent);
         }
     </style>
 </head>
 <body>
 
 <header class="hero">
-    <div class="badge">Internet Dedicado · Internet Empresarial · Internet para Eventos</div>
-    <h1 class="hero-title">¿Qué es el Internet Dedicado?</h1>
-    <p class="hero-subtitle">
-        Descubre la diferencia real entre el <strong>Internet Dedicado</strong>, el <strong>Internet SD-WAN</strong>,
-        los enlaces <strong>T1/T2</strong> y las soluciones vía <strong>Starlink</strong>. 
-        Conoce cómo elegir la mejor opción para tu empresa, tus eventos y tus operaciones de misión crítica 
-        en Ciudad de México y en todo México.
-    </p>
-    <div class="cta-row">
-        <a href="#contacto" class="btn-primary">Cotizar Internet Dedicado</a>
-        <a href="#comparativa" class="btn-secondary">Ver comparativa técnica</a>
+    <div class="hero-inner">
+        <div class="brand-row">
+            <div class="logo">
+                <a href="https://ciberall.net">
+                    <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" alt="Logotipo CiBERALL®">
+                </a>
+                <div class="brand-text">
+                    CiBERALL® · THE INTERNET COMPANY
+                </div>
+            </div>
+        </div>
+
+        <span class="badge">Internet Dedicado · Internet Empresarial · Internet para Eventos</span>
+        <h1 class="hero-title">¿Qué es el Internet Dedicado?</h1>
+        <p class="hero-subtitle">
+            Diferencias reales entre <strong>Internet Dedicado</strong>, <strong>Internet SD-WAN</strong>,
+            enlaces <strong>T1/T2</strong> y <strong>Starlink</strong>.  
+            Arquitecturas de alto desempeño para empresas, gobierno, industria y eventos en Ciudad de México y todo México.
+        </p>
+        <div class="cta-row">
+            <a href="#contacto" class="btn-primary">Cotizar Internet Dedicado</a>
+            <a href="#comparativa" class="btn-secondary">Ver comparativa técnica</a>
+        </div>
     </div>
 </header>
 
@@ -225,12 +430,12 @@
         <p>
             El <strong>Internet Dedicado</strong> es un servicio de conectividad <strong>simétrico, garantizado y no compartido</strong>,
             diseñado para que una organización cuente con <strong>ancho de banda exclusivo</strong>, latencia baja y desempeño 
-            constante, incluso en horarios de máxima demanda.
+            constante, incluso en horas de máxima demanda.
         </p>
         <p>
-            A diferencia de los servicios residenciales o “best effort”, el Internet Dedicado está pensado como un 
+            A diferencia de los servicios residenciales o “best effort”, el Internet Dedicado se concibe como un 
             <strong>activo estratégico</strong> para aplicaciones empresariales, servicios en la nube, streaming profesional,
-            videoconferencias, redes de voz y datos, y cualquier entorno donde la caída del enlace no sea una opción.
+            videoconferencias, voz sobre IP, redes de datos y entornos donde la caída del enlace simplemente no es opción.
         </p>
 
         <div class="grid grid-2">
@@ -250,7 +455,7 @@
                 <div class="card-tag">Tecnología subyacente</div>
                 <div class="card-title">Fibra óptica e infraestructura carrier-grade</div>
                 <p>
-                    El Internet Dedicado suele operar sobre <strong>fibra óptica dedicada</strong>, enlaces metropolitanos 
+                    El Internet Dedicado opera sobre <strong>fibra óptica dedicada</strong>, enlaces metropolitanos 
                     y equipamiento carrier-grade. Esto se traduce en latencias ultra bajas y alta disponibilidad, 
                     ideales para <strong>Internet empresarial, Internet simétrico e Internet para eventos</strong>.
                 </p>
@@ -262,7 +467,7 @@
         <div class="section-label">Comparativa técnica</div>
         <h2>Internet Dedicado vs SD-WAN vs Best Effort</h2>
         <p>
-            Cuando se evalúa infraestructura de red, es crítico entender las diferencias entre 
+            Para tomar decisiones de infraestructura es clave entender las diferencias entre 
             <strong>Internet Dedicado</strong>, <strong>Internet SD-WAN</strong> y servicios 
             <strong>best effort</strong> residenciales o de oficina pequeña.
         </p>
@@ -278,13 +483,12 @@
 
         <h3>2. Internet SD-WAN (Internet Definido por Software)</h3>
         <p>
-            La <strong>SD-WAN</strong> no es un tipo de enlace físico, sino una capa de orquestación inteligente 
-            que permite combinar múltiples enlaces (fibra, Starlink, LTE/5G, xDSL, etc.) para mejorar disponibilidad 
-            y rendimiento.
+            La <strong>SD-WAN</strong> es una capa de orquestación inteligente que permite combinar múltiples enlaces 
+            (fibra, Starlink, LTE/5G, xDSL, etc.) para mejorar disponibilidad y rendimiento.
         </p>
         <ul>
             <li><strong>Tecnología:</strong> Orquestación y encriptación sobre múltiples proveedores.</li>
-            <li><strong>Ventaja clave:</strong> Bonding, failover automático, balanceo, QoS y priorización de tráfico crítico.</li>
+            <li><strong>Ventaja clave:</strong> Bonding, failover automático, balanceo, QoS y priorización de aplicaciones críticas.</li>
             <li><strong>Velocidad:</strong> Resultante de la suma de varios enlaces.</li>
             <li><strong>Uso ideal:</strong> Sucursales, retail, redes distribuidas, conexiones híbridas y contingencias.</li>
         </ul>
@@ -302,9 +506,9 @@
         <div class="section-label">Internet Satelital</div>
         <h2>Internet Dedicado vs Starlink (LEO)</h2>
         <p>
-            <strong>Starlink</strong> ha cambiado el juego en zonas remotas y escenarios de movilidad. Sin embargo,
-            su modelo es <strong>best effort premium</strong>, mientras que el Internet Dedicado ofrece capacidad garantizada
-            sobre fibra óptica u otros medios dedicados.
+            <strong>Starlink</strong> ha transformado la conectividad en zonas remotas y escenarios de movilidad. 
+            Sin embargo, su modelo es <strong>best effort premium</strong>, mientras que el Internet Dedicado ofrece 
+            capacidad garantizada sobre fibra óptica u otros medios dedicados.
         </p>
 
         <div class="table-wrapper">
@@ -347,7 +551,7 @@
         </div>
 
         <p>
-            Una arquitectura moderna puede combinar <strong>Internet Dedicado + Starlink + SD-WAN</strong> para obtener 
+            Una arquitectura moderna combina <strong>Internet Dedicado + Starlink + SD-WAN</strong> para lograr 
             alta disponibilidad, balanceo y resiliencia: fibra como enlace principal, Starlink como respaldo y SD-WAN 
             gestionando el tráfico de forma inteligente.
         </p>
@@ -359,17 +563,17 @@
         <p>
             Los enlaces <strong>T1 (1.544 Mbps)</strong> y <strong>T2 (6.312 Mbps)</strong> fueron durante años el estándar 
             del Internet empresarial. Hoy, las soluciones de <strong>Internet Dedicado por fibra óptica</strong> ofrecen 
-            velocidades desde decenas de megas hasta múltiples gigabits, con menor latencia y mejores costos por Mbps.
+            velocidades desde decenas de megas hasta múltiples gigabits, con menor latencia y mejor costo por Mbps.
         </p>
         <p>
-            En muchos proyectos actuales, los T1/T2 se mantienen solo por compatibilidad con entornos legacy. 
-            En nuevos despliegues, el camino natural es <strong>Internet Dedicado por fibra + SD-WAN + Starlink</strong>.
+            En proyectos nuevos, el camino natural es <strong>Internet Dedicado por fibra + SD-WAN + Starlink</strong>, 
+            reservando T1/T2 únicamente para entornos legacy que lo requieren por compatibilidad.
         </p>
     </section>
 
     <section id="casos-uso">
         <div class="section-label">Casos de uso</div>
-        <h2>Casos de uso: empresas, eventos y operaciones críticas</h2>
+        <h2>Empresas, eventos y operaciones críticas</h2>
 
         <div class="grid grid-3">
             <div class="card">
@@ -404,21 +608,21 @@
         <h2>Internet Dedicado en Ciudad de México y todo México</h2>
         <p>
             La <strong>Ciudad de México</strong> es uno de los hubs de telecomunicaciones más importantes de América Latina. 
-            Desde aquí es posible diseñar soluciones de <strong>Internet Dedicado, Internet Empresarial, Internet simétrico</strong> 
+            Desde aquí se diseñan soluciones de <strong>Internet Dedicado, Internet Empresarial, Internet simétrico</strong> 
             e <strong>Internet para eventos</strong> para cualquier región del país.
         </p>
         <p>
-            Trabajamos con carriers y redes de alta capacidad como:
+            Integramos carriers y redes de alta capacidad como:
         </p>
         <ul>
             <li><strong>Cogent</strong></li>
             <li><strong>Cirion</strong> (antes Lumen)</li>
             <li><strong>Flonetworks</strong></li>
             <li>Operadores de fibra óptica metropolitana y larga distancia</li>
-            <li>Operadores satelitales como <strong>Starlink</strong></li>
+            <li>Operadores satelitales como <strong>Starlink</strong> (distribución autorizada)</li>
         </ul>
         <p>
-            Esto permite entregar soluciones de <strong>Internet dedicado en Ciudad de México</strong> y 
+            Esto nos permite entregar soluciones de <strong>Internet dedicado en Ciudad de México</strong> y 
             <strong>servicios de Internet empresarial en todo México</strong>, alineadas con los niveles de servicio 
             que exige cada proyecto.
         </p>
@@ -428,7 +632,7 @@
         <div class="section-label">Optimización SEO</div>
         <h2>Palabras clave relacionadas</h2>
         <p>
-            Esta página está optimizada para búsquedas como:
+            Página optimizada para búsquedas como:
             <strong>Internet dedicado, Internet empresarial, Internet para eventos, Internet simétrico, 
             Internet dedicado en Ciudad de México, proveedor de servicios de Internet en México, 
             distribuidor autorizado Starlink, Flonetworks, Cirion, Cogent, Internet por fibra óptica, Internet SD-WAN</strong>.
@@ -449,63 +653,100 @@
         </div>
     </section>
 
-    <section id="contacto">
-        <div class="section-label">Siguiente paso</div>
-        <h2>¿Necesitas Internet Dedicado o SD-WAN para tu empresa o evento?</h2>
-        <p>
-            Diseñamos soluciones a la medida para <strong>empresas, gobiernos, industria, sedes corporativas y eventos</strong> 
-            en Ciudad de México y en todo México. Integramos <strong>Internet Dedicado, Internet por fibra óptica, SD-WAN, 
-            Starlink y carriers como Flonetworks, Cirion y Cogent</strong>.
-        </p>
-        <p><strong>Completa el formulario o contáctanos para recibir una propuesta técnica y económica detallada.</strong></p>
+    <!-- Redes sociales -->
+    <section class="social-section">
+        <div class="section-label">Redes sociales</div>
+        <h2>Síguenos y conéctate con CiBERALL®</h2>
+        <div class="social-grid">
+            <a class="social-item" href="https://facebook.com/ciberallhotspot" target="_blank" rel="noopener">
+                <img src="https://ciberall.net/img_indx/icono_facebook.jpg" alt="Facebook CiBERALL">
+                <span>/ciberallhotspot</span>
+            </a>
+            <a class="social-item" href="https://mx.linkedin.com/company/ciberall" target="_blank" rel="noopener">
+                <img src="https://ciberall.net/img_indx/icono_linkedin.jpg" alt="LinkedIn CiBERALL">
+                <span>LinkedIn · CiBERALL</span>
+            </a>
+            <a class="social-item" href="https://www.instagram.com/ipviasatelite/" target="_blank" rel="noopener">
+                <img src="https://ciberall.net/img_indx/icono_instagram.jpg" alt="Instagram IPviaSatelite">
+                <span>@ipviasatelite</span>
+            </a>
+            <a class="social-item" href="https://www.pinterest.com.mx/ciberall/" target="_blank" rel="noopener">
+                <img src="https://ciberall.net/img_indx/icono_pinterest.jpg" alt="Pinterest CiBERALL">
+                <span>/ciberall</span>
+            </a>
+            <a class="social-item" href="https://x.com/ipviasatelite" target="_blank" rel="noopener">
+                <img src="https://ciberall.net/img_indx/icono_x.jpg" alt="X (Twitter) IPviaSatelite">
+                <span>@ipviasatelite</span>
+            </a>
+        </div>
+    </section>
 
-        <!-- Reemplaza este bloque con tu formulario real -->
-        <form action="/enviar-formulario" method="post">
-            <div class="grid grid-2">
-                <div>
-                    <label for="nombre">Nombre *</label><br>
-                    <input type="text" id="nombre" name="nombre" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
-                </div>
-                <div>
-                    <label for="empresa">Empresa *</label><br>
-                    <input type="text" id="empresa" name="empresa" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
-                </div>
+    <!-- Contacto + formulario -->
+    <section id="contacto" class="contact-section">
+        <div class="section-label">☄ Contacto (+52)</div>
+        <h2>Agenda tu proyecto de Internet Dedicado o SD-WAN</h2>
+        <div class="contact-grid">
+            <div class="contact-lines">
+                <p class="contact-label">Líneas de contacto CiBERALL®:</p>
+                <p>☎︎ Llamada por voz: <strong>6644-38-6677</strong></p>
+                <p>☎︎ Llamada y mensaje a correo: <strong>55-4162-9630</strong></p>
+                <p>✆ Celular y WhatsApp: <strong>55-3964-8280</strong> y <strong>55-1126-4765</strong></p>
+                <p>✉ Correo electrónico: <a href="mailto:hola@ciberall.com">hola@ciberall.com</a></p>
             </div>
-            <div class="grid grid-2">
-                <div>
-                    <label for="email">Correo electrónico *</label><br>
-                    <input type="email" id="email" name="email" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
-                </div>
-                <div>
-                    <label for="telefono">Teléfono / WhatsApp</label><br>
-                    <input type="tel" id="telefono" name="telefono" style="width:100%;padding:0.5rem;margin:0.3rem 0;">
-                </div>
-            </div>
+
             <div>
-                <label for="tipo-servicio">Tipo de servicio requerido *</label><br>
-                <select id="tipo-servicio" name="tipo_servicio" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
-                    <option value="">Selecciona una opción</option>
-                    <option value="internet-dedicado">Internet Dedicado Empresarial</option>
-                    <option value="internet-eventos">Internet para Eventos</option>
-                    <option value="internet-simetrico">Internet Simétrico</option>
-                    <option value="sd-wan">Internet SD-WAN</option>
-                    <option value="starlink">Internet Satelital (Starlink)</option>
-                    <option value="fibra-optica">Internet por Fibra Óptica</option>
-                </select>
+                <p class="contact-label">Envíanos los datos de tu proyecto:</p>
+                <!-- Reemplaza action con tu endpoint real -->
+                <form action="/enviar-formulario" method="post">
+                    <div class="grid grid-2">
+                        <div>
+                            <label for="nombre">Nombre *</label><br>
+                            <input type="text" id="nombre" name="nombre" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
+                        </div>
+                        <div>
+                            <label for="empresa">Empresa *</label><br>
+                            <input type="text" id="empresa" name="empresa" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
+                        </div>
+                    </div>
+                    <div class="grid grid-2">
+                        <div>
+                            <label for="email">Correo electrónico *</label><br>
+                            <input type="email" id="email" name="email" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
+                        </div>
+                        <div>
+                            <label for="telefono">Teléfono / WhatsApp</label><br>
+                            <input type="tel" id="telefono" name="telefono" style="width:100%;padding:0.5rem;margin:0.3rem 0;">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="tipo-servicio">Tipo de servicio requerido *</label><br>
+                        <select id="tipo-servicio" name="tipo_servicio" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
+                            <option value="">Selecciona una opción</option>
+                            <option value="internet-dedicado">Internet Dedicado Empresarial</option>
+                            <option value="internet-eventos">Internet para Eventos</option>
+                            <option value="internet-simetrico">Internet Simétrico</option>
+                            <option value="sd-wan">Internet SD-WAN</option>
+                            <option value="starlink">Internet Satelital (Starlink)</option>
+                            <option value="fibra-optica">Internet por Fibra Óptica</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensaje">Cuéntanos tu proyecto</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4" style="width:100%;padding:0.5rem;margin:0.3rem 0;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="margin-top:0.8rem;">Enviar solicitud</button>
+                </form>
             </div>
-            <div>
-                <label for="mensaje">Cuéntanos tu proyecto</label><br>
-                <textarea id="mensaje" name="mensaje" rows="4" style="width:100%;padding:0.5rem;margin:0.3rem 0;"></textarea>
-            </div>
-            <button type="submit" class="btn-primary" style="margin-top:0.8rem;">Enviar solicitud</button>
-        </form>
+        </div>
     </section>
 </main>
 
 <footer>
     <div style="max-width:1100px;margin:0 auto;">
-        <strong>CiBERALL® – The Internet Company</strong><br>
-        Proveedor de servicios de Internet en todo México · Internet Dedicado · Internet Empresarial · Internet para Eventos · Internet SD-WAN · Distribuidor autorizado Starlink
+        <strong>2025 - CiBER ALL ® INTERNET S DE RL DE CV "THE INTERNET COMPANY"</strong> – Derechos Reservados<br>
+        <a href="https://ciberall.company.site/pages/privacy-policy" target="_blank" rel="noopener">
+            Política de Privacidad
+        </a>
     </div>
 </footer>
 

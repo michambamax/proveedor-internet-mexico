@@ -13,14 +13,14 @@
     <meta property="og:title" content="¿Qué es el Internet Dedicado? | CiBERALL® Internet Empresarial en México">
     <meta property="og:description" content="Diferencias técnicas entre Internet Dedicado, SD-WAN, enlaces T1/T2 y Starlink. Soluciones para empresas, eventos y proyectos críticos en México.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tudominio.com/internet-dedicado">
-    <meta property="og:image" content="https://lonso.net/imagenes/internet-dedicado-mexico.jpg">
+    <meta property="og:url" content="https://proveedor-internet-dedicado-mexico.com">
+    <meta property="og:image" content="https://lonso.net/imagenes/og-internet-dedicado-mexico.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="¿Qué es el Internet Dedicado? | CiBERALL® Internet Empresarial en México">
     <meta name="twitter:description" content="Guía técnica de Internet Dedicado, SD-WAN, Starlink y fibra óptica para empresas y eventos en México.">
-    <meta name="twitter:image" content="https://lonso.net/imagenes/internet-dedicado-mexico.jpg">
+    <meta name="twitter:image" content="https://lonso.net/imagenes/og-internet-dedicado-mexico.png">
 
     <!-- Datos estructurados simples (Organization + Service) -->
     <script type="application/ld+json">
@@ -49,7 +49,7 @@
     }
     </script>
 
-    <!-- Fuentes: Russo One para títulos, Exo para texto -->
+    <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Exo:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -62,9 +62,7 @@
             --border-soft: rgba(255, 111, 0, 0.4);
         }
 
-        * {
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; }
 
         body {
             margin: 0;
@@ -79,9 +77,7 @@
             color: var(--accent);
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
-        }
+        a:hover { text-decoration: underline; }
 
         header, section {
             max-width: 1100px;
@@ -99,10 +95,7 @@
             border-bottom: 1px solid var(--border-soft);
         }
 
-        .hero-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
+        .hero-inner { max-width: 1100px; margin: 0 auto; }
 
         .brand-row {
             display: flex;
@@ -112,11 +105,7 @@
             margin-bottom: 1.25rem;
         }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
+        .logo { display: flex; align-items: center; gap: 0.75rem; }
 
         .logo img {
             max-height: 52px;
@@ -208,32 +197,18 @@
             color: var(--accent);
         }
 
-        p {
-            margin: 0.5rem 0 0.75rem;
-            color: var(--text);
-        }
+        p { margin: 0.5rem 0 0.75rem; color: var(--text); }
 
-        ul {
-            padding-left: 1.25rem;
-            margin: 0.4rem 0 1rem;
-        }
+        ul { padding-left: 1.25rem; margin: 0.4rem 0 1rem; }
 
-        li {
-            margin-bottom: 0.3rem;
-        }
+        li { margin-bottom: 0.3rem; }
 
-        .grid {
-            display: grid;
-            gap: 1.5rem;
-        }
+        .grid { display: grid; gap: 1.5rem; }
 
         @media (min-width: 900px) {
-            .grid-2 {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-            .grid-3 {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
+            .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+            .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
         }
 
         .card {
@@ -258,10 +233,7 @@
             color: #ffffff;
         }
 
-        .table-wrapper {
-            overflow-x: auto;
-            margin: 1rem 0;
-        }
+        .table-wrapper { overflow-x: auto; margin: 1rem 0; }
 
         table {
             width: 100%;
@@ -277,9 +249,7 @@
             background-color: rgba(15, 23, 42, 0.9);
             color: #f9fafb;
         }
-        tr:nth-child(even) td {
-            background-color: rgba(15, 23, 42, 0.65);
-        }
+        tr:nth-child(even) td { background-color: rgba(15, 23, 42, 0.65); }
 
         .tag-cloud {
             display: flex;
@@ -302,6 +272,44 @@
             letter-spacing: 0.16em;
             color: #6b7280;
             margin-bottom: 0.4rem;
+        }
+
+        /* Carrusel de logos */
+        .logo-carousel-wrapper {
+            border-top: 1px solid var(--border-soft);
+            border-bottom: 1px solid var(--border-soft);
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            overflow: hidden;
+        }
+
+        .logo-carousel-track {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            animation: scroll-logos 35s linear infinite;
+            width: max-content;
+        }
+
+        .logo-carousel-track img {
+            height: 42px;
+            max-width: 160px;
+            object-fit: contain;
+            filter: grayscale(15%);
+            opacity: 0.9;
+            transition: all 0.2s ease-out;
+        }
+
+        .logo-carousel-track img:hover {
+            filter: none;
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        @keyframes scroll-logos {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
 
         /* Redes sociales */
@@ -333,9 +341,7 @@
             display: block;
         }
 
-        .social-item span {
-            font-size: 0.85rem;
-        }
+        .social-item span { font-size: 0.85rem; }
 
         /* Contacto */
         .contact-section {
@@ -350,14 +356,10 @@
         }
 
         @media (min-width: 768px) {
-            .contact-grid {
-                grid-template-columns: 3fr 2fr;
-            }
+            .contact-grid { grid-template-columns: 3fr 2fr; }
         }
 
-        .contact-lines p {
-            margin: 0.25rem 0;
-        }
+        .contact-lines p { margin: 0.25rem 0; }
 
         .contact-label {
             font-weight: 600;
@@ -374,10 +376,7 @@
             border-radius: 0.45rem;
         }
 
-        label {
-            font-size: 0.85rem;
-            color: #9ca3af;
-        }
+        label { font-size: 0.85rem; color: #9ca3af; }
 
         /* Footer */
         footer {
@@ -388,8 +387,36 @@
             color: #9ca3af;
         }
 
-        footer a {
+        footer a { color: var(--accent); }
+
+        /* Páginas y logos */
+        .partner-logo {
+            text-align: center;
+        }
+        .partner-logo img {
+            max-width: 100%;
+            max-height: 70px;
+            object-fit: contain;
+            margin-bottom: 0.5rem;
+        }
+        .partner-logo-title {
+            font-size: 0.9rem;
+            color: #e5f3ff;
+            margin-bottom: 0.3rem;
+        }
+        .partner-logo a.btn-partner {
+            display: inline-block;
+            margin-top: 0.2rem;
+            font-size: 0.75rem;
+            padding: 0.35rem 0.9rem;
+            border-radius: 999px;
+            border: 1px solid var(--button);
             color: var(--accent);
+            text-decoration: none;
+        }
+        .partner-logo a.btn-partner:hover {
+            background-color: rgba(255, 111, 0, 0.2);
+            text-decoration: none;
         }
     </style>
 </head>
@@ -416,8 +443,9 @@
             Arquitecturas de alto desempeño para empresas, gobierno, industria y eventos en Ciudad de México y todo México.
         </p>
         <div class="cta-row">
-            <a href="#contacto" class="btn-primary">Cotizar Internet Dedicado</a>
+            <a href="#contacto" class="btn-primary">Cotizar por WhatsApp</a>
             <a href="#comparativa" class="btn-secondary">Ver comparativa técnica</a>
+            <a href="https://ciberall.net/precios/" class="btn-secondary" target="_blank" rel="noopener">Ver precios</a>
         </div>
     </div>
 </header>
@@ -653,6 +681,84 @@
         </div>
     </section>
 
+    <!-- CARRUSEL DE LOGOS -->
+    <section class="logo-carousel-wrapper">
+        <div class="section-label">Alianzas, nubes y carriers</div>
+        <h2>Infraestructura integrada con líderes globales</h2>
+        <div class="logo-carousel-track">
+            <!-- Primer set -->
+            <img src="https://ciberall.net/img_indx/Nextcloud-10.webp" alt="Nextcloud">
+            <img src="https://ciberall.net/img_indx/tencent.png" alt="Tencent Cloud">
+            <img src="https://ciberall.net/img_indx/studio_lonso_logo.png" alt="Studio Lonso">
+            <img src="https://ciberall.net/img_indx/OVH_logo-1536x266.png" alt="OVH">
+            <img src="https://ciberall.net/img_indx/onlyoffyce.png" alt="OnlyOffice">
+            <img src="https://ciberall.net/img_indx/MS-Azure_new_logo.png" alt="Microsoft Azure">
+            <img src="https://ciberall.net/img_indx/IBM-Logo-1536x452.png" alt="IBM Cloud">
+            <img src="https://ciberall.net/img_indx/GoogleCloud.png" alt="Google Cloud">
+            <img src="https://ciberall.net/img_indx/cogent_communications_logo_ciberall.png" alt="Cogent Communications">
+            <img src="https://ciberall.net/img_indx/Alibaba-Cloud-logo-banner.png" alt="Alibaba Cloud">
+            <!-- Segundo set (duplicado para efecto infinito) -->
+            <img src="https://ciberall.net/img_indx/Nextcloud-10.webp" alt="Nextcloud">
+            <img src="https://ciberall.net/img_indx/tencent.png" alt="Tencent Cloud">
+            <img src="https://ciberall.net/img_indx/studio_lonso_logo.png" alt="Studio Lonso">
+            <img src="https://ciberall.net/img_indx/OVH_logo-1536x266.png" alt="OVH">
+            <img src="https://ciberall.net/img_indx/onlyoffyce.png" alt="OnlyOffice">
+            <img src="https://ciberall.net/img_indx/MS-Azure_new_logo.png" alt="Microsoft Azure">
+            <img src="https://ciberall.net/img_indx/IBM-Logo-1536x452.png" alt="IBM Cloud">
+            <img src="https://ciberall.net/img_indx/GoogleCloud.png" alt="Google Cloud">
+            <img src="https://ciberall.net/img_indx/cogent_communications_logo_ciberall.png" alt="Cogent Communications">
+            <img src="https://ciberall.net/img_indx/Alibaba-Cloud-logo-banner.png" alt="Alibaba Cloud">
+        </div>
+    </section>
+
+    <!-- PÁGINAS Y LOGOS -->
+    <section>
+        <div class="section-label">Páginas y logos</div>
+        <h2>Ecosistema CiBERALL® y aliados</h2>
+        <div class="grid grid-4">
+            <div class="card partner-logo">
+                <img src="https://lonso.net/logo/Logo%20de%20Studio%20Lonso.png" alt="Studio Lonso">
+                <div class="partner-logo-title">Studio Lonso</div>
+                <a href="https://lonso.net/" target="_blank" rel="noopener" class="btn-partner">Visitar sitio</a>
+            </div>
+            <div class="card partner-logo">
+                <img src="https://lonso.net/chambamax/img/logo_chambamax.png" alt="ChambaMax">
+                <div class="partner-logo-title">Portal del Chambeador</div>
+                <a href="https://chambamax.com/" target="_blank" rel="noopener" class="btn-partner">Visitar sitio</a>
+            </div>
+            <div class="card partner-logo">
+                <img src="https://www.aztecall.com/index_htm_files/1673@2x.png" alt="AzteCall Telecomunicaciones">
+                <div class="partner-logo-title">Telecomunicaciones</div>
+                <a href="https://aztecall.com/" target="_blank" rel="noopener" class="btn-partner">Visitar sitio</a>
+            </div>
+            <div class="card partner-logo">
+                <img src="https://lonso.net/logo%20artesania%20naval.png" alt="Artesanía Naval">
+                <div class="partner-logo-title">Artesanía Naval</div>
+                <a href="https://artesanianaval.com/" target="_blank" rel="noopener" class="btn-partner">Visitar sitio</a>
+            </div>
+            <div class="card partner-logo">
+                <img src="https://ipviasatelite.com/imagenes/logos/longo%20ip%20via%20satelite.png" alt="IP vía Satélite México">
+                <div class="partner-logo-title">IP Vía Satélite México</div>
+                <a href="https://ipviasatelite.com.mx/" target="_blank" rel="noopener" class="btn-partner">Visitar sitio</a>
+            </div>
+            <div class="card partner-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqdm0SabD2IfNMM_AQt49vC3c3DlShfvSN8Q&s" alt="The Internet Company">
+                <div class="partner-logo-title">The Internet Company</div>
+                <a href="https://ciberall.pw/" target="_blank" rel="noopener" class="btn-partner">Visitar sitio</a>
+            </div>
+            <div class="card partner-logo">
+                <img src="https://www.ciberall.com/wp-content/uploads/2024/12/LOGO-INTERNET-PYME.png" alt="CiBERALL PYME">
+                <div class="partner-logo-title">CiBERALL PYME</div>
+                <a href="https://www.ciberall.com/producto/ciberall-internet-pyme/" target="_blank" rel="noopener" class="btn-partner">Ver producto</a>
+            </div>
+            <div class="card partner-logo">
+                <img src="https://ciberall.com/wp-content/uploads/2024/12/Internet-satelital-eventos-1024x1024.png" alt="Renta Internet para eventos">
+                <div class="partner-logo-title">Cotiza tu próximo evento</div>
+                <a href="https://ciberall.net/renta-internet-eventos-mexico.html" target="_blank" rel="noopener" class="btn-partner">Cotizar evento</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Redes sociales -->
     <section class="social-section">
         <div class="section-label">Redes sociales</div>
@@ -681,7 +787,7 @@
         </div>
     </section>
 
-    <!-- Contacto + formulario -->
+    <!-- Contacto + formulario (WhatsApp) -->
     <section id="contacto" class="contact-section">
         <div class="section-label">☄ Contacto (+52)</div>
         <h2>Agenda tu proyecto de Internet Dedicado o SD-WAN</h2>
@@ -695,9 +801,9 @@
             </div>
 
             <div>
-                <p class="contact-label">Envíanos los datos de tu proyecto:</p>
-                <!-- Reemplaza action con tu endpoint real -->
-                <form action="/enviar-formulario" method="post">
+                <p class="contact-label">Envía los datos directo a WhatsApp:</p>
+                <!-- FORMULARIO A WHATSAPP -->
+                <form id="whatsapp-form">
                     <div class="grid grid-2">
                         <div>
                             <label for="nombre">Nombre *</label><br>
@@ -710,8 +816,8 @@
                     </div>
                     <div class="grid grid-2">
                         <div>
-                            <label for="email">Correo electrónico *</label><br>
-                            <input type="email" id="email" name="email" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
+                            <label for="email">Correo electrónico</label><br>
+                            <input type="email" id="email" name="email" style="width:100%;padding:0.5rem;margin:0.3rem 0;">
                         </div>
                         <div>
                             <label for="telefono">Teléfono / WhatsApp</label><br>
@@ -722,19 +828,19 @@
                         <label for="tipo-servicio">Tipo de servicio requerido *</label><br>
                         <select id="tipo-servicio" name="tipo_servicio" required style="width:100%;padding:0.5rem;margin:0.3rem 0;">
                             <option value="">Selecciona una opción</option>
-                            <option value="internet-dedicado">Internet Dedicado Empresarial</option>
-                            <option value="internet-eventos">Internet para Eventos</option>
-                            <option value="internet-simetrico">Internet Simétrico</option>
-                            <option value="sd-wan">Internet SD-WAN</option>
-                            <option value="starlink">Internet Satelital (Starlink)</option>
-                            <option value="fibra-optica">Internet por Fibra Óptica</option>
+                            <option value="Internet Dedicado Empresarial">Internet Dedicado Empresarial</option>
+                            <option value="Internet para Eventos">Internet para Eventos</option>
+                            <option value="Internet Simétrico">Internet Simétrico</option>
+                            <option value="Internet SD-WAN">Internet SD-WAN</option>
+                            <option value="Internet Satelital (Starlink)">Internet Satelital (Starlink)</option>
+                            <option value="Internet por Fibra Óptica">Internet por Fibra Óptica</option>
                         </select>
                     </div>
                     <div>
                         <label for="mensaje">Cuéntanos tu proyecto</label><br>
                         <textarea id="mensaje" name="mensaje" rows="4" style="width:100%;padding:0.5rem;margin:0.3rem 0;"></textarea>
                     </div>
-                    <button type="submit" class="btn-primary" style="margin-top:0.8rem;">Enviar solicitud</button>
+                    <button type="submit" class="btn-primary" style="margin-top:0.8rem;">Enviar por WhatsApp</button>
                 </form>
             </div>
         </div>
@@ -749,6 +855,57 @@
         </a>
     </div>
 </footer>
+
+<!-- SCRIPT PARA ENVIAR FORMULARIO A WHATSAPP -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("whatsapp-form");
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const nombre = document.getElementById("nombre").value.trim();
+        const empresa = document.getElementById("empresa").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const telefono = document.getElementById("telefono").value.trim();
+        const servicio = document.getElementById("tipo-servicio").value;
+        const mensajeExtra = document.getElementById("mensaje").value.trim();
+
+        if (!nombre || !empresa || !servicio) {
+            alert("Por favor, completa al menos Nombre, Empresa y Tipo de servicio.");
+            return;
+        }
+
+        let texto = "Hola, me interesa un servicio de Internet.\n\n";
+        texto += "👤 Nombre: " + nombre + "\n";
+        texto += "🏢 Empresa: " + empresa + "\n";
+        if (email)    texto += "✉ Correo: " + email + "\n";
+        if (telefono) texto += "📞 Teléfono/WhatsApp: " + telefono + "\n";
+        texto += "🛰 Servicio requerido: " + servicio + "\n";
+        if (mensajeExtra) {
+            texto += "\n📝 Detalles del proyecto:\n" + mensajeExtra + "\n";
+        }
+
+        const numero = "525539648280"; // +52 55 3964 8280
+        const url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(texto);
+
+        window.open(url, "_blank");
+    });
+});
+</script>
+
+<!-- Código de instalación Cliengo para www.ciberall.com -->
+<script type="text/javascript">
+  (function () {
+      var ldk = document.createElement('script');
+      ldk.type = 'text/javascript';
+      ldk.async = true;
+      ldk.src = 'https://s.cliengo.com/weboptimizer/617028df6c5bf9002a081b31/617028e16c5bf9002a081b37.js?platform=view_installation_code';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ldk, s);
+  })();
+</script>
 
 </body>
 </html>

@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://proveedor-internet-dedicado-mexico.com/">
     <!-- Google Fonts: Russo One + Exo -->
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Exo:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 (icons complementarios) -->
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -122,16 +122,10 @@
             border-bottom: 1px solid rgba(51, 153, 204, 0.2);
         }
 
-        .logo h1 {
-            font-size: 1.8rem;
-            background: none;
-            color: #A8FF00;
-            margin: 0;
-        }
-
-        .logo p {
-            font-size: 0.8rem;
-            color: #3399CC;
+        .logo img {
+            height: 55px;
+            width: auto;
+            display: block;
         }
 
         .nav-links {
@@ -152,17 +146,46 @@
             border-bottom: 2px solid #FF6F00;
         }
 
-        /* Hero */
+        /* Hero con fondo de imagen */
         .hero {
+            position: relative;
             padding: 60px 0 40px;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             gap: 40px;
+            background-image: url('https://proveedor-internet-dedicado-mexico.com/peninsular/Internet-Alto-nivel-CiberALL-Mexico.png');
+            background-size: cover;
+            background-position: center center;
+            border-radius: 28px;
+            margin: 20px 0 20px;
+            z-index: 1;
         }
-
+        
+        /* Overlay oscuro para mejorar legibilidad del texto sobre la imagen */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            border-radius: 28px;
+            z-index: -1;
+        }
+        
         .hero-content {
             flex: 1;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-image-side {
+            flex: 0.8;
+            text-align: center;
+            position: relative;
+            z-index: 2;
         }
 
         .hero-buttons {
@@ -422,11 +445,10 @@
 </a>
 
 <div class="container">
-    <!-- Header -->
+    <!-- Header con logo -->
     <div class="navbar">
         <div class="logo">
-            <h1>CiBER ALL®</h1>
-            <p>THE INTERNET COMPANY · Internet Dedicado</p>
+            <img src="https://ciberall.com/ping/ciberall-logo-futurista-plano.png" alt="CiBER ALL - Internet Dedicado México" loading="eager">
         </div>
         <div class="nav-links">
             <a href="#inicio">Inicio</a>
@@ -436,7 +458,7 @@
         </div>
     </div>
 
-    <!-- Hero / Inicio -->
+    <!-- Hero con imagen de fondo -->
     <section id="inicio">
         <div class="hero">
             <div class="hero-content">
@@ -448,8 +470,8 @@
                     <a href="tel:9992090385" class="btn-outline"><i class="fas fa-phone-alt"></i> Llamar ahora: 999 209 0385</a>
                 </div>
             </div>
-            <div style="flex:0.8; text-align: center;">
-                <i class="fas fa-network-wired" style="font-size: 8rem; color: #FF6F00; opacity: 0.7;"></i>
+            <div class="hero-image-side">
+                <i class="fas fa-network-wired" style="font-size: 6rem; color: #FF6F00; opacity: 0.9;"></i>
             </div>
         </div>
     </section>
@@ -515,7 +537,7 @@
         </div>
     </div>
 
-    <!-- Sección completa de Contacto y Redes Sociales (requerimientos específicos) -->
+    <!-- Sección completa de Contacto y Redes Sociales -->
     <section id="contacto">
         <h2><i class="fas fa-headset"></i> Contacto directo & redes oficiales</h2>
         <div class="contact-section">
@@ -534,7 +556,6 @@
             <div class="social-icons">
                 <h3>Síguenos y conoce más</h3>
                 <div class="social-group">
-                    <!-- Facebook doble según los enlaces requeridos -->
                     <a href="https://facebook.com/ciberallhotspot" class="social-icon-link" target="_blank" rel="noopener noreferrer">
                         <img src="https://ciberall.net/img_indx/icono_facebook.jpg" alt="Facebook Ciberall Hotspot"> Ciberall Hotspot
                     </a>
@@ -561,7 +582,7 @@
         </div>
     </section>
 
-    <!-- Footer con políticas y créditos -->
+    <!-- Footer -->
     <footer>
         <div class="footer-links">
             <a href="https://www.ciberall.com/politica-privacidad/" target="_blank">Política de Privacidad</a>
@@ -574,12 +595,9 @@
     </footer>
 </div>
 
-<!-- small script para año dinámico (opcional) -->
+<!-- script opcional -->
 <script>
-    // Si se desea actualizar el año dinámicamente respetando 2026? El texto dice 2026, se mantiene, pero también podemos mostrar consistencia
-    const yearSpan = document.querySelector('footer p:first-of-type');
-    // pero ya está 2026 como texto fijo, lo dejamos exacto según requerimiento.
-    console.log("Sitio de Internet Dedicado listo para atracción de clientes");
+    console.log("Sitio de Internet Dedicado con logo y fondo personalizado - CiberALL");
 </script>
 </body>
 </html>

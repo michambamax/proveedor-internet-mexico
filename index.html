@@ -1,234 +1,585 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Internet Dedicado en México | Conexión Tier-1 y Hyperbond | Villahermosa, Mérida, Cancún, Cd del Carmen, Riviera Maya, Tulum</title>
+    <meta name="description" content="Proveedor de Internet Dedicado empresarial en el Sureste de México: Villahermosa, Ciudad del Carmen, Mérida, Cancún, Riviera Maya y Tulum. Enlaces desde 20 Mbps hasta 10 Gbps, conexión directa Tier-1, Hyperbond SD-Mult-WAN y planes sin contrato forzoso. ¡Contáctanos!">
+    <meta name="keywords" content="Internet Dedicado Villahermosa, Internet Dedicado Tabasco, Internet Empresarial Ciudad del Carmen, Internet Dedicado Mérida, Internet Dedicado Cancún, Internet Dedicado Riviera Maya, Internet Dedicado Tulum, Hyperbond SD-WAN, Tier-1 Mexico, Ciberall">
+    <meta name="author" content="CiBER ALL ® INTERNET">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://proveedor-internet-dedicado-mexico.com/">
+    <!-- Google Fonts: Russo One + Exo -->
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Exo:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (icons complementarios) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<title>CiberALL ® – Streaming y WiFi para Eventos en México</title>
+        body {
+            background-color: #000000;
+            color: #3399CC;
+            font-family: 'Exo', sans-serif;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
 
-<meta name="description" content="Streaming, internet dedicado y WiFi profesional para eventos en México con CiberALL ®">
+        h1, h2, h3, .title-font {
+            font-family: 'Russo One', sans-serif;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+        }
 
-<!-- Open Graph -->
-<meta property="og:image" content="/imagenes/op-proveedor-internet-satelital-eventos-mexico.png">
+        h1 {
+            font-size: 2.8rem;
+            background: linear-gradient(135deg, #3399CC, #A8FF00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
 
-<!-- FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Exo:wght@300;400;600&display=swap" rel="stylesheet">
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid #FF6F00;
+            padding-left: 1rem;
+        }
 
-<style>
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #A8FF00;
+        }
 
-body{
-    margin:0;
-    background:#000;
-    color:#3399CC;
-    font-family:'Exo', sans-serif;
-}
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
 
-/* HERO */
-header{
-    background:url('https://proveedor-internet-dedicado-mexico.com/servicio-internet-streaming-eventos-mexico/imagenes/Ciberall%20Streaming%20para%20Eventos.png') center/cover no-repeat;
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
+        /* Botones y bordes con #FF6F00 */
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #FF6F00;
+            color: #000000;
+            font-weight: bold;
+            padding: 14px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-family: 'Exo', sans-serif;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(255, 111, 0, 0.3);
+        }
 
-header h1{
-    font-family:'Russo One';
-    font-size:3rem;
-    color:#A8FF00;
-}
+        .btn-primary i {
+            font-size: 1.2rem;
+        }
 
-header p{
-    font-size:1.2rem;
-}
+        .btn-primary:hover {
+            background-color: #A8FF00;
+            color: #000000;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(168, 255, 0, 0.4);
+        }
 
-.logo{
-    width:180px;
-    margin-top:20px;
-}
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #FF6F00;
+            color: #3399CC;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-/* SECCIONES */
-section{
-    padding:60px 20px;
-    max-width:1200px;
-    margin:auto;
-}
+        .btn-outline:hover {
+            background: #FF6F00;
+            color: #000;
+            border-color: #FF6F00;
+        }
 
-h2{
-    font-family:'Russo One';
-    color:#FF6F00;
-}
+        /* Header y navegación */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(51, 153, 204, 0.2);
+        }
 
-/* CARDS */
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
+        .logo h1 {
+            font-size: 1.8rem;
+            background: none;
+            color: #A8FF00;
+            margin: 0;
+        }
 
-.card{
-    border:2px solid #FF6F00;
-    padding:20px;
-    border-radius:12px;
-}
+        .logo p {
+            font-size: 0.8rem;
+            color: #3399CC;
+        }
 
-/* IMÁGENES */
-.img-full{
-    width:100%;
-    margin-top:20px;
-    border:2px solid #FF6F00;
-}
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
 
-/* BOTONES */
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:15px 25px;
-    background:#FF6F00;
-    color:#000;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:8px;
-}
+        .nav-links a {
+            color: #3399CC;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+        }
 
-/* TESTIMONIO */
-.testimonio{
-    background:url('https://proveedor-internet-dedicado-mexico.com/servicio-internet-streaming-eventos-mexico/imagenes/fondo%20para%20testimonios.png') center/cover no-repeat;
-    padding:80px 20px;
-    text-align:center;
-    color:#A8FF00;
-}
+        .nav-links a:hover {
+            color: #A8FF00;
+            border-bottom: 2px solid #FF6F00;
+        }
 
-/* CTA */
-.cta{
-    background:#FF6F00;
-    color:#000;
-    text-align:center;
-    padding:40px;
-    font-family:'Russo One';
-}
+        /* Hero */
+        .hero {
+            padding: 60px 0 40px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
 
-/* FOOTER */
-footer{
-    background:#000;
-    padding:40px;
-    text-align:center;
-}
+        .hero-content {
+            flex: 1;
+        }
 
-.social img{
-    width:30px;
-    margin:5px;
-}
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
 
-/* WHATSAPP FLOAT */
-.whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:#fff;
-    padding:15px 20px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    box-shadow:0 0 10px #25D366;
-}
+        .highlight-text {
+            color: #A8FF00;
+            font-weight: bold;
+        }
 
-</style>
+        /* Grid ventajas */
+        .ventajas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .card {
+            background: rgba(51, 153, 204, 0.05);
+            border: 1px solid rgba(255, 111, 0, 0.3);
+            border-radius: 24px;
+            padding: 28px 20px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            border-color: #FF6F00;
+            transform: translateY(-6px);
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .card i {
+            font-size: 2.5rem;
+            color: #FF6F00;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+        }
+
+        .badge-highlight {
+            background: #A8FF00;
+            color: #000;
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            margin-top: 12px;
+        }
+
+        /* mercados */
+        .markets-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .market-item {
+            background: rgba(255, 111, 0, 0.15);
+            padding: 12px 24px;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-left: 3px solid #FF6F00;
+            transition: 0.2s;
+        }
+
+        .market-item:hover {
+            background: #FF6F00;
+            color: #000;
+            transform: scale(1.02);
+        }
+
+        /* plan flex */
+        .plan-flex {
+            background: linear-gradient(145deg, #0a0f1a, #000000);
+            border-radius: 32px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 1px solid #FF6F00;
+            text-align: center;
+        }
+
+        .speed-badge {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #A8FF00;
+            font-family: 'Russo One', sans-serif;
+        }
+
+        /* contacto sección */
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 50px 0;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 32px;
+            padding: 30px;
+            border: 1px solid #FF6F00;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-info p {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info i {
+            width: 32px;
+            color: #FF6F00;
+            font-size: 1.3rem;
+        }
+
+        .social-icons {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .social-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .social-icon-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(51, 153, 204, 0.1);
+            padding: 6px 16px;
+            border-radius: 60px;
+            transition: 0.2s;
+            text-decoration: none;
+            color: #3399CC;
+            font-weight: 500;
+        }
+
+        .social-icon-link img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+        }
+
+        .social-icon-link:hover {
+            background: #FF6F00;
+            color: #000;
+        }
+
+        /* footer */
+        footer {
+            border-top: 1px solid rgba(255, 111, 0, 0.4);
+            padding: 40px 0 30px;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 28px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #3399CC;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #A8FF00;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .hero-buttons {
+                justify-content: center;
+            }
+            .contact-section {
+                flex-direction: column;
+            }
+            .btn-primary, .btn-outline {
+                padding: 10px 20px;
+            }
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25D366;
+            border-radius: 50px;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            z-index: 999;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            font-family: 'Exo', sans-serif;
+        }
+        .whatsapp-float i {
+            font-size: 1.8rem;
+        }
+        @media (max-width: 550px) {
+            .whatsapp-float span {
+                display: none;
+            }
+            .whatsapp-float {
+                padding: 12px;
+            }
+        }
+        .resaltado {
+            color: #A8FF00;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- HERO -->
-<header>
-    <h1>Internet para Streaming 4K</h1>
-    <p>Transmite, conecta y haz que nadie se quede sin señal</p>
-    <img src="https://ciberall.com/ping/ciberall-logo-futurista-plano.png" class="logo">
-</header>
+<!-- Botón flotante WhatsApp -->
+<a href="https://wa.me/525511264765?text=Hola%2C%20me%20interesa%20el%20Internet%20Dedicado%20para%20mi%20negocio%20en%20M%C3%A9xico.%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>WhatsApp Directo</span>
+</a>
 
-<!-- INTRO -->
-<section>
-    <h2>Solución Integral para Eventos</h2>
-    <p>
-    Streaming, internet dedicado y WiFi profesional para eventos en todo México.
-    </p>
-
-    <img src="https://proveedor-internet-dedicado-mexico.com/servicio-internet-streaming-eventos-mexico/imagenes/ciberall-renta-servicio-streaming-internet-eventos-mexico.png" class="img-full">
-</section>
-
-<!-- SERVICIOS -->
-<section>
-    <h2>Servicios</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>📡 Streaming Profesional</h3>
-            <p>Producción multicámara y transmisión estable.</p>
+<div class="container">
+    <!-- Header -->
+    <div class="navbar">
+        <div class="logo">
+            <h1>CiBER ALL</h1>
+            <p>THE INTERNET COMPANY · Internet Dedicado</p>
         </div>
-
-        <div class="card">
-            <h3>🌐 Internet Dedicado</h3>
-            <p>Hasta 1 Gbps con redundancia.</p>
-        </div>
-
-        <div class="card">
-            <h3>📶 WiFi para Eventos</h3>
-            <p>Alta densidad de usuarios.</p>
-        </div>
-
-        <div class="card">
-            <h3>🔥 Hotspot Inteligente</h3>
-            <p>Captura de leads y branding.</p>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#ventajas">Ventajas</a>
+            <a href="#mercados">Mercados</a>
+            <a href="#contacto">Contacto</a>
         </div>
     </div>
 
-    <img src="https://proveedor-internet-dedicado-mexico.com/servicio-internet-streaming-eventos-mexico/imagenes/conexion-internet-eventos-streaming-mexico-wifi.png" class="img-full">
-</section>
+    <!-- Hero / Inicio -->
+    <section id="inicio">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Internet Dedicado de Alto Rendimiento en México</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 1rem;">Conexión directa <span class="highlight-text">Backbone IP Tier-1</span> + tecnología <span class="highlight-text">Hyperbond SD-Mult-WAN</span> para empresas que exigen velocidad y confiabilidad.</p>
+                <p>Enlaces desde <strong class="resaltado">20 Mbps hasta 10 Gbps</strong> · Sin contratos forzosos · Planes a 24 y 36 meses · Cobertura en el sureste mexicano.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/525511264765?text=Necesito%20información%20de%20Internet%20Dedicado%20para%20mi%20empresa" class="btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Contactar por WhatsApp</a>
+                    <a href="tel:9992090385" class="btn-outline"><i class="fas fa-phone-alt"></i> Llamar ahora: 999 209 0385</a>
+                </div>
+            </div>
+            <div style="flex:0.8; text-align: center;">
+                <i class="fas fa-network-wired" style="font-size: 8rem; color: #FF6F00; opacity: 0.7;"></i>
+            </div>
+        </div>
+    </section>
 
-<!-- TESTIMONIO -->
-<section class="testimonio">
-    <h2>Resultados Reales</h2>
-    <p>“Evento con 1,200 asistentes y streaming sin cortes.”</p>
-</section>
+    <!-- Ventajas Principales -->
+    <section id="ventajas">
+        <h2><i class="fas fa-bolt" style="color:#FF6F00; margin-right: 12px;"></i> Ventajas competitivas</h2>
+        <div class="ventajas-grid">
+            <div class="card">
+                <i class="fas fa-globe-americas"></i>
+                <h3>Backbone IP Tier-1</h3>
+                <p>Conexión directa a la red global de nivel 1, menor latencia y rutas óptimas para tu negocio. Sin intermediarios.</p>
+                <span class="badge-highlight">Máxima fiabilidad</span>
+            </div>
+            <div class="card">
+                <i class="fas fa-layer-group"></i>
+                <h3>Hyperbond SD-Mult-WAN</h3>
+                <p>Sistema de agregación de ancho de banda que une múltiples enlaces para mayor velocidad y resiliencia. Tecnología exclusiva.</p>
+                <span class="badge-highlight">+ estabilidad</span>
+            </div>
+            <div class="card">
+                <i class="fas fa-file-signature"></i>
+                <h3>Sin contrato forzoso</h3>
+                <p>Planes flexibles: sin permanencia, o contratos a 24 y 36 meses. Tú decides lo que conviene a tu empresa.</p>
+                <span class="badge-highlight">Libertad total</span>
+            </div>
+            <div class="card">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>Desde 20 Mbps hasta 10 Gbps</h3>
+                <p>Escalabilidad pura. Elige la velocidad que tu operación necesita y crece sin límites con nuestra infraestructura.</p>
+                <span class="badge-highlight">Simétrico / Dedicado</span>
+            </div>
+        </div>
+    </section>
 
-<!-- CONTACTO -->
-<section>
-    <h2>Contacto</h2>
+    <!-- Mercados con SEO local -->
+    <section id="mercados">
+        <h2><i class="fas fa-map-marker-alt" style="color:#FF6F00;"></i> Donde te conectamos con excelencia</h2>
+        <p style="margin-bottom: 1rem;">Somos el proveedor de Internet Dedicado líder en el sureste, con cobertura empresarial garantizada en:</p>
+        <div class="markets-grid">
+            <div class="market-item">🏙️ Villahermosa, Tabasco</div>
+            <div class="market-item">⚓ Ciudad del Carmen, Campeche</div>
+            <div class="market-item">🌿 Mérida, Yucatán</div>
+            <div class="market-item">🏝️ Cancún, Quintana Roo</div>
+            <div class="market-item">🌊 Riviera Maya, QR</div>
+            <div class="market-item">🗿 Tulum, Quintana Roo</div>
+        </div>
+        <p style="text-align: center; background: rgba(168,255,0,0.1); padding: 12px; border-radius: 30px;">+ Cobertura en toda la Península de Yucatán y zonas industriales. ¡Contáctanos y confirma disponibilidad!</p>
+    </section>
 
-    <img src="https://proveedor-internet-dedicado-mexico.com/servicio-internet-streaming-eventos-mexico/imagenes/Contacto%20Streaming%20para%20Eventos%20CiberALL.png" class="img-full">
+    <!-- Planes destacados + Hyperbond info -->
+    <div class="plan-flex">
+        <i class="fas fa-charging-station" style="font-size: 3rem; color:#FF6F00;"></i>
+        <h3 style="color:#A8FF00; margin-top: 10px;">Tecnología Hyperbond SD-Mult-WAN</h3>
+        <p>Agregación inteligente de rutas WAN que garantiza ancho de banda superior, failover automático y máximo uptime. Perfecto para sector financiero, hotelería, retail y corporativos.</p>
+        <div style="margin: 25px 0;">
+            <span class="speed-badge">20 Mbps ↔ 10 Gbps</span>
+            <p style="margin-top: 10px;">Planes a la medida: Sin contrato forzoso | 24 meses | 36 meses</p>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <a href="https://wa.me/525511264765?text=Quiero%20cotizar%20Internet%20Dedicado%20para%20mi%20negocio" class="btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Cotiza ahora</a>
+            <a href="tel:9992090385" class="btn-outline"><i class="fas fa-phone"></i> Llamar a ventas</a>
+        </div>
+    </div>
 
-    <p>📞 PBX: (+52) 999-209-0385</p>
-    <p>📱 WhatsApp: 55-1126-4765</p>
-    <p>📧 hola@ciberall.com</p>
+    <!-- Sección completa de Contacto y Redes Sociales (requerimientos específicos) -->
+    <section id="contacto">
+        <h2><i class="fas fa-headset"></i> Contacto directo & redes oficiales</h2>
+        <div class="contact-section">
+            <div class="contact-info">
+                <h3 style="color:#A8FF00;">☄ CONTACTO (+52)</h3>
+                <p><i class="fas fa-phone-alt"></i> <strong>PBX y SMS:</strong> (+52) 999-209-0385</p>
+                <p><i class="fas fa-envelope"></i> <strong>LLAMADA Y MENSAJE A CORREO:</strong> 55-4162-9630</p>
+                <p><i class="fab fa-whatsapp"></i> <strong>Celular y WhatsApp:</strong> 55-3964-8280 y 55-1126-4765</p>
+                <p><i class="fas fa-at"></i> <strong>Email:</strong> <a href="mailto:hola@ciberall.com" style="color:#A8FF00;">hola@ciberall.com</a></p>
+                <p><i class="fas fa-building"></i> <strong>Atención empresarial:</strong> Lunes a viernes 9am - 7pm</p>
+                <div style="margin-top: 20px;">
+                    <a href="https://wa.me/525511264765?text=Me%20interesa%20Internet%20Dedicado" class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp principal</a>
+                    <a href="tel:9992090385" class="btn-outline" style="margin-left: 12px;"><i class="fas fa-phone"></i> 999 209 0385</a>
+                </div>
+            </div>
+            <div class="social-icons">
+                <h3>Síguenos y conoce más</h3>
+                <div class="social-group">
+                    <!-- Facebook doble según los enlaces requeridos -->
+                    <a href="https://facebook.com/ciberallhotspot" class="social-icon-link" target="_blank" rel="noopener noreferrer">
+                        <img src="https://ciberall.net/img_indx/icono_facebook.jpg" alt="Facebook Ciberall Hotspot"> Ciberall Hotspot
+                    </a>
+                    <a href="https://facebook.com/ipviasatelite" class="social-icon-link" target="_blank" rel="noopener noreferrer">
+                        <img src="https://ciberall.net/img_indx/icono_facebook.jpg" alt="Facebook Ipvia Satelite"> Ipvia Satelite
+                    </a>
+                </div>
+                <div class="social-group">
+                    <a href="https://mx.linkedin.com/company/ciberall" class="social-icon-link" target="_blank">
+                        <img src="https://ciberall.net/img_indx/icono_linkedin.jpg" alt="LinkedIn Ciberall"> LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/ipviasatelite/" class="social-icon-link" target="_blank">
+                        <img src="https://ciberall.net/img_indx/icono_instagram.jpg" alt="Instagram Ipvia Satelite"> Instagram
+                    </a>
+                    <a href="https://www.pinterest.com.mx/ciberall/" class="social-icon-link" target="_blank">
+                        <img src="https://ciberall.net/img_indx/icono_pinterest.jpg" alt="Pinterest Ciberall"> Pinterest
+                    </a>
+                    <a href="https://x.com/ipviasatelite" class="social-icon-link" target="_blank">
+                        <img src="https://ciberall.net/img_indx/icono_x.jpg" alt="X / Twitter Ipvia"> X (Twitter)
+                    </a>
+                </div>
+                <p style="margin-top: 12px; font-size: 0.8rem;">📡 Conectamos tu negocio con la mejor tecnología de enlace dedicado.</p>
+            </div>
+        </div>
+    </section>
 
-</section>
-
-<!-- CTA -->
-<div class="cta">
-    Sin buena red, no hay buen evento.
+    <!-- Footer con políticas y créditos -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.ciberall.com/politica-privacidad/" target="_blank">Política de Privacidad</a>
+            <a href="#">Aviso de Privacidad</a>
+            <a href="https://ciberall.com/" target="_blank">CiBERALL.com</a>
+        </div>
+        <p>2026 - CiBER ALL ® INTERNET S DE RL DE CV "THE INTERNET COMPANY" - Derechos Reservados</p>
+        <p style="margin: 12px 0 5px; font-size: 0.75rem;">Programación, Desarrollo y Edición: <a href="https://lonso.net/" target="_blank" style="color:#A8FF00;">Studio Lonso</a> | Powered by CiBERALL ®</p>
+        <p style="font-size: 0.7rem; margin-top: 10px;">Conexión directa Tier-1, Hyperbond SD-Mult-WAN, enlaces dedicados 20Mbps - 10Gbps, sin contrato forzoso. Cobertura empresarial en Villahermosa, Cd del Carmen, Mérida, Cancún, Riviera Maya y Tulum.</p>
+    </footer>
 </div>
 
-<!-- FOOTER -->
-<footer>
-
-<div class="social">
-<a href="https://facebook.com/ciberallhotspot"><img src="https://ciberall.net/img_indx/icono_facebook.jpg"></a>
-<a href="https://mx.linkedin.com/company/ciberall"><img src="https://ciberall.net/img_indx/icono_linkedin.jpg"></a>
-<a href="https://www.instagram.com/ipviasatelite/"><img src="https://ciberall.net/img_indx/icono_instagram.jpg"></a>
-<a href="https://www.pinterest.com.mx/ciberall/"><img src="https://ciberall.net/img_indx/icono_pinterest.jpg"></a>
-<a href="https://x.com/ipviasatelite"><img src="https://ciberall.net/img_indx/icono_x.jpg"></a>
-</div>
-
-<p>2026 - CiBER ALL ® INTERNET S DE RL DE CV</p>
-
-</footer>
-
-<!-- WHATSAPP CON CIERRE -->
-<a href="https://wa.me/525511264765?text=Hola%2C%20quiero%20cotizar%20un%20evento.%0ATipo%3A%0AFecha%3A%0AUbicaci%C3%B3n%3A%0AAforo%3A%0AServicio%3A%20Streaming%20%2F%20Internet%20%2F%20WiFi%20%2F%20Hotspot" class="whatsapp">
-💬 Cotizar mi evento
-</a>
-
+<!-- small script para año dinámico (opcional) -->
+<script>
+    // Si se desea actualizar el año dinámicamente respetando 2026? El texto dice 2026, se mantiene, pero también podemos mostrar consistencia
+    const yearSpan = document.querySelector('footer p:first-of-type');
+    // pero ya está 2026 como texto fijo, lo dejamos exacto según requerimiento.
+    console.log("Sitio de Internet Dedicado listo para atracción de clientes");
+</script>
 </body>
 </html>

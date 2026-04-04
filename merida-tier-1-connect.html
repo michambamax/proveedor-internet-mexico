@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta SEO -->
+    <title>Internet Dedicado Mérida | Transporte Tier-1 Internacional | Ciberall</title>
+    <meta name="description" content="Conectividad de clase mundial en Mérida. Internet Dedicado con transporte directo Tier-1 Internacional y cobertura en los principales Parques Industriales de Yucatán.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --merida-blue: #003a8c;
+            --yucatan-cyan: #00d2ff;
+            --global-gold: #c5a059;
+            --white-city: #ffffff;
+            --tech-dark: #0f172a;
+        }
+
+        body {
+            background-color: var(--white-city);
+            color: var(--tech-dark);
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .font-header { font-family: 'Syncopate', sans-serif; }
+
+        .hero-premium {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(0, 58, 140, 0.9) 100%), 
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .tier1-badge {
+            background: linear-gradient(90deg, var(--global-gold), #e6c27a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+
+        .park-card {
+            border: 1px solid #e2e8f0;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .park-card:hover {
+            border-color: var(--yucatan-cyan);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 30px -10px rgba(0, 210, 255, 0.15);
+        }
+
+        .global-map-overlay {
+            background-image: url('https://www.transparenttextures.com/patterns/world-map.png');
+            opacity: 0.1;
+        }
+
+        .btn-gold {
+            background: linear-gradient(90deg, #b8860b, #daa520);
+            color: white;
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(0, 210, 255, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(0, 210, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 210, 255, 0); }
+        }
+
+        .active-node {
+            animation: pulse-glow 2s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-lg border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" alt="Ciberall" class="h-7">
+                <span class="hidden md:block h-5 w-px bg-slate-200"></span>
+                <span class="text-[10px] font-header tracking-widest text-slate-500">Mérida Global Hub</span>
+            </div>
+            
+            <div class="hidden lg:flex gap-8 text-[11px] uppercase tracking-widest font-bold">
+                <a href="#cobertura" class="hover:text-blue-600 transition">Cobertura</a>
+                <a href="#tier1" class="text-blue-700">Tier-1 Network</a>
+                <a href="#contacto" class="hover:text-blue-600 transition">Cotizar</a>
+            </div>
+
+            <a href="https://wa.me/525511264765" class="bg-slate-900 text-white px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-tighter hover:bg-blue-800 transition flex items-center gap-2">
+                <i class="fab fa-whatsapp"></i> Soporte NOC
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Tier-1 Focus -->
+    <section class="hero-premium min-h-screen flex items-center relative overflow-hidden pt-20">
+        <div class="global-map-overlay absolute inset-0"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-400/30 px-4 py-1.5 rounded-full mb-8">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                    </span>
+                    <span class="text-[10px] font-bold text-cyan-300 uppercase tracking-widest">Backbone Internacional Directo</span>
+                </div>
+                
+                <h1 class="font-header text-5xl md:text-8xl font-bold text-white mb-6 leading-[0.9] tracking-tighter">
+                    MÉRIDA <br> <span class="tier1-badge">TIER-1</span> <span class="text-3xl md:text-5xl align-middle">CONNECT</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-slate-300 mb-10 max-w-2xl font-light">
+                    Internet Dedicado con <span class="text-white font-semibold">capacidad de transporte directo Tier-1</span>. Latencia mínima hacia hubs globales (Miami/Dallas) para empresas que no permiten interrupciones.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contacto" class="btn-gold px-12 py-5 rounded-full font-bold text-sm uppercase tracking-widest">
+                        Solicitar Proyecto
+                    </a>
+                    <a href="#cobertura" class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white/20 transition">
+                        Ver Parques Industriales
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tier-1 Technical Highlight -->
+    <section id="tier1" class="py-24 bg-slate-900 text-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-xs font-header text-cyan-400 tracking-[0.4em] mb-6">INFRAESTRUCTURA GLOBAL</h2>
+                    <h3 class="text-4xl font-bold mb-8 leading-tight">Transporte Directo sin Intermediarios</h3>
+                    <p class="text-slate-400 text-lg mb-10 leading-relaxed">
+                        Nuestra red en Mérida no depende de revendedores locales. Conectamos su negocio directamente al **Backbone Tier-1 Internacional**, garantizando una ruta más corta y segura hacia los principales centros de datos del mundo.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4 p-6 bg-white/5 rounded-2xl border border-white/10">
+                            <i class="fas fa-microchip text-3xl text-cyan-500"></i>
+                            <div>
+                                <h4 class="font-bold mb-1">Peering Directo</h4>
+                                <p class="text-sm text-slate-400">Interconexión directa con Google, AWS, Microsoft y Netflix para máximo rendimiento.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-6 bg-white/5 rounded-2xl border border-white/10">
+                            <i class="fas fa-shield-halved text-3xl text-global-gold"></i>
+                            <div>
+                                <h4 class="font-bold mb-1">Protección DDoS Mitigada</h4>
+                                <p class="text-sm text-slate-400">Seguridad perimetral integrada desde el transporte internacional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square bg-blue-600/20 rounded-full flex items-center justify-center relative">
+                        <div class="absolute inset-0 border border-blue-500/20 rounded-full scale-110"></div>
+                        <div class="absolute inset-0 border border-blue-500/10 rounded-full scale-125"></div>
+                        <!-- Stylized Global Network Graphic -->
+                        <div class="text-center z-10">
+                            <i class="fas fa-globe-americas text-9xl text-blue-500 mb-6 block"></i>
+                            <span class="font-header text-xs tracking-widest text-cyan-400">RED HYPERBOND</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industrial Parks Coverage -->
+    <section id="cobertura" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-xs font-header text-blue-600 tracking-[0.5em] mb-4">MAPA DE COBERTURA</h2>
+                <h3 class="text-4xl font-extrabold text-slate-900 mb-6">Presencia Líder en los <span class="text-blue-600">Parques Industriales</span> de Yucatán</h3>
+                <p class="text-slate-500">Nodos activos con capacidad de entrega inmediata en las zonas de mayor plusvalía industrial y logística.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Parque 1 -->
+                <div class="park-card p-8 rounded-3xl bg-slate-50">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="fas fa-industry text-3xl text-blue-900"></i>
+                        <span class="bg-green-100 text-green-700 text-[9px] font-bold px-3 py-1 rounded-full uppercase">Activo 10G</span>
+                    </div>
+                    <h4 class="font-header text-sm font-bold mb-2">Parque Industrial Mérida (PIMSA)</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Ubicación estratégica en la salida a Progreso. Entrega de fibra dedicada y microondas de alta capacidad.</p>
+                    <div class="flex items-center gap-2 text-blue-600 text-[10px] font-bold uppercase tracking-widest">
+                        <i class="fas fa-map-pin"></i> Norte Mérida
+                    </div>
+                </div>
+
+                <!-- Parque 2 -->
+                <div class="park-card p-8 rounded-3xl bg-slate-50">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="fas fa-box text-3xl text-blue-900"></i>
+                        <span class="bg-green-100 text-green-700 text-[9px] font-bold px-3 py-1 rounded-full uppercase">Activo 10G</span>
+                    </div>
+                    <h4 class="font-header text-sm font-bold mb-2">Central Business Park (CBP)</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Conectividad crítica para centros logísticos y bodegas de última milla en el periférico poniente.</p>
+                    <div class="flex items-center gap-2 text-blue-600 text-[10px] font-bold uppercase tracking-widest">
+                        <i class="fas fa-map-pin"></i> Poniente / Hunucmá
+                    </div>
+                </div>
+
+                <!-- Parque 3 -->
+                <div class="park-card p-8 rounded-3xl bg-slate-50">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="fas fa-warehouse text-3xl text-blue-900"></i>
+                        <span class="bg-green-100 text-green-700 text-[9px] font-bold px-3 py-1 rounded-full uppercase">Activo 1G+</span>
+                    </div>
+                    <h4 class="font-header text-sm font-bold mb-2">Parque Industrial Umán</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Nodos robustos para la industria manufacturera pesada y alimentaria del corredor sur-poniente.</p>
+                    <div class="flex items-center gap-2 text-blue-600 text-[10px] font-bold uppercase tracking-widest">
+                        <i class="fas fa-map-pin"></i> Corredor Industrial Umán
+                    </div>
+                </div>
+
+                <!-- Parque 4 -->
+                <div class="park-card p-8 rounded-3xl bg-slate-50">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="fas fa-rocket text-3xl text-blue-900"></i>
+                        <span class="bg-blue-100 text-blue-700 text-[9px] font-bold px-3 py-1 rounded-full uppercase">Expansión 2026</span>
+                    </div>
+                    <h4 class="font-header text-sm font-bold mb-2">SkyPark Yucatán</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Infraestructura lista para empresas de tecnología y aeroespaciales de nueva generación.</p>
+                    <div class="flex items-center gap-2 text-blue-600 text-[10px] font-bold uppercase tracking-widest">
+                        <i class="fas fa-map-pin"></i> Kanasín / Periférico Oriente
+                    </div>
+                </div>
+
+                <!-- Parque 5 -->
+                <div class="park-card p-8 rounded-3xl bg-slate-50">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="fas fa-laptop-code text-3xl text-blue-900"></i>
+                        <span class="bg-green-100 text-green-700 text-[9px] font-bold px-3 py-1 rounded-full uppercase">Activo 10G</span>
+                    </div>
+                    <h4 class="font-header text-sm font-bold mb-2">Parque Científico Tecnológico</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-6">Enlaces de baja latencia para laboratorios, centros de investigación y data centers locales.</p>
+                    <div class="flex items-center gap-2 text-blue-600 text-[10px] font-bold uppercase tracking-widest">
+                        <i class="fas fa-map-pin"></i> Sierra Papacal
+                    </div>
+                </div>
+
+                <!-- Parque 6 -->
+                <div class="park-card p-8 rounded-3xl border-dashed border-2 border-slate-200 flex flex-col justify-center items-center text-center">
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">¿Su parque no está en la lista?</p>
+                    <p class="text-[10px] text-slate-400 mb-6">Hacemos despliegues a medida.</p>
+                    <a href="#contacto" class="text-blue-600 font-bold text-xs underline">Consultar Otros Puntos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-[4rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 p-12 md:p-20 bg-blue-900 text-white relative">
+                    <div class="absolute inset-0 global-map-overlay opacity-20"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-4xl font-header font-bold mb-8">Ready to <br><span class="text-cyan-400">Scale Global?</span></h3>
+                        <div class="space-y-10">
+                            <div class="flex gap-6">
+                                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-cyan-400">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-xs font-header text-slate-300 uppercase tracking-widest mb-1">NOC Central</h5>
+                                    <p class="text-lg font-bold">Mérida Regional Office</p>
+                                    <p class="text-sm text-slate-400">Calle 60 Norte, Zona Industrial</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-cyan-400">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-xs font-header text-slate-300 uppercase tracking-widest mb-1">Ventas Corporate</h5>
+                                    <p class="text-lg font-bold">999 209 0385</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 p-12 md:p-20">
+                    <form action="https://formspree.io/f/xkogdrn" method="POST" class="space-y-8">
+                        <div>
+                            <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4">Datos del Proyecto</label>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <input type="text" name="empresa" placeholder="Empresa / Corporativo" required class="w-full bg-slate-100 p-4 rounded-xl text-sm focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none transition">
+                                <input type="text" name="parque" placeholder="Parque Industrial" required class="w-full bg-slate-100 p-4 rounded-xl text-sm focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none transition">
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <input type="email" name="email" placeholder="Email de Contacto" required class="w-full bg-slate-100 p-4 rounded-xl text-sm focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none transition">
+                            <input type="tel" name="tel" placeholder="WhatsApp" required class="w-full bg-slate-100 p-4 rounded-xl text-sm focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none transition">
+                        </div>
+                        <textarea name="mensaje" rows="4" placeholder="Requerimientos técnicos (Ancho de banda, IPs fijas...)" class="w-full bg-slate-100 p-4 rounded-xl text-sm focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none transition"></textarea>
+                        <button type="submit" class="w-full bg-blue-900 text-white py-5 rounded-xl font-header text-xs uppercase tracking-[0.3em] hover:bg-slate-900 transition-all shadow-lg">
+                            Enviar a Ingeniería
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-20 border-t border-slate-100">
+        <div class="container mx-auto px-6 text-center">
+            <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" alt="Ciberall" class="h-6 mx-auto mb-10 opacity-60">
+            <p class="text-[9px] font-header text-slate-400 tracking-[0.4em] uppercase mb-10 leading-loose">
+                CiBER ALL ® INTERNET S DE RL DE CV · MERIDA HUB · TIER-1 GLOBAL NETWORK<br>
+                CIBERALL ES UNA MARCA REGISTRADA. TODOS LOS DERECHOS RESERVADOS.
+            </p>
+            <div class="flex justify-center gap-8 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+                <a href="https://www.ciberall.com/politica-privacidad/" class="hover:text-blue-600">Aviso Legal</a>
+                <a href="https://lonso.net/" class="text-slate-300">Design by Lonso</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

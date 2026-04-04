@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta SEO -->
+    <title>Internet Dedicado Villahermosa & Dos Bocas | Red Hyperbond | Ciberall</title>
+    <meta name="description" content="Conectividad de Grado Industrial en Villahermosa y Dos Bocas, Tabasco. Fibra Óptica, Microondas y Red Hyperbond para el sector energético.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --tabasco-green: #006b3f;
+            --tech-blue: #00d2ff;
+            --oil-black: #0a0a0a;
+            --gold-accent: #d4af37;
+        }
+
+        body {
+            background-color: var(--oil-black);
+            color: #e0e0e0;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .font-tech { font-family: 'Orbitron', sans-serif; }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(0, 107, 63, 0.4) 0%, rgba(10, 10, 10, 0.9) 100%);
+        }
+
+        .service-card {
+            background: #151515;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--tech-blue);
+            box-shadow: 0 10px 30px rgba(0, 210, 255, 0.15);
+        }
+
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 210, 255, 0.2);
+        }
+
+        .btn-vhsa {
+            background: linear-gradient(90deg, var(--tabasco-green), #00a859);
+            color: white;
+            transition: 0.3s;
+        }
+
+        .btn-vhsa:hover {
+            filter: brightness(1.2);
+            box-shadow: 0 0 20px rgba(0, 168, 89, 0.4);
+        }
+
+        .tech-tag {
+            background: rgba(0, 210, 255, 0.1);
+            color: var(--tech-blue);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Map Styles */
+        .map-container {
+            background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .map-hotspot {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .map-hotspot:hover circle {
+            fill: var(--tech-blue);
+            r: 12;
+        }
+
+        .map-hotspot.active circle {
+            fill: var(--tech-blue);
+            r: 14;
+            filter: drop-shadow(0 0 8px var(--tech-blue));
+        }
+
+        .info-panel {
+            background: rgba(255,255,255,0.03);
+            border-left: 4px solid var(--tabasco-green);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: var(--tabasco-green); border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" alt="Ciberall" class="h-8">
+                <span class="hidden md:block border-l border-white/20 pl-3 font-tech text-[10px] tracking-widest text-gray-400">VILLAHERMOSA | DOS BOCAS</span>
+            </div>
+            <div class="hidden lg:flex gap-8 text-[11px] font-tech tracking-widest uppercase">
+                <a href="#tecnologias" class="hover:text-tech-blue transition">Tecnologías</a>
+                <a href="#dos-bocas" class="text-tabasco-green hover:text-white transition">Hub Dos Bocas</a>
+                <a href="#ai-consultant" class="text-tech-blue">Consultoría IA ✨</a>
+            </div>
+            <a href="https://wa.me/525511264765" class="btn-vhsa px-6 py-2 rounded font-bold text-xs uppercase tracking-widest">Cotizar</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-[90vh] flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 hero-gradient z-10"></div>
+            <img src="https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&q=80" alt="Villahermosa Tabasco" class="w-full h-full object-cover">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-20">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-7xl font-tech font-extrabold leading-tight mb-6">
+                    DOMINIO <br>
+                    <span class="text-tech-blue">TECNOLÓGICO</span> <br>
+                    EN EL SURESTE.
+                </h1>
+                <p class="text-lg md:text-xl font-light text-gray-300 mb-8 border-l-4 border-tabasco-green pl-6 max-w-xl">
+                    Internet Dedicado en Villahermosa y cobertura total en el Puerto de Dos Bocas. Resiliencia extrema para la industria crítica.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#dos-bocas" class="bg-white/10 hover:bg-white/20 px-6 py-3 rounded-lg font-tech text-[10px] uppercase tracking-widest transition border border-white/10">
+                        Explorar Dos Bocas
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mapa Interactivo Dos Bocas -->
+    <section id="dos-bocas" class="py-24 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <span class="text-tabasco-green font-tech text-xs tracking-[0.3em] uppercase mb-4 block">Estrategia Regional</span>
+                    <h2 class="text-4xl font-tech mb-6 leading-tight">Hub de Conectividad <br><span class="text-white">Puerto de Dos Bocas</span></h2>
+                    <p class="text-gray-400 mb-8 text-sm leading-relaxed">
+                        Desplegamos infraestructura de microondas de alta capacidad y fibra óptica dedicada en el epicentro energético de México. Nuestra red está diseñada para soportar las condiciones salinas y climáticas del puerto.
+                    </p>
+                    
+                    <div id="zone-info" class="info-panel p-6 rounded-r-xl bg-zinc-900/50">
+                        <h4 id="zone-title" class="text-tech-blue font-tech text-sm mb-2 uppercase">Selecciona una zona en el mapa</h4>
+                        <p id="zone-desc" class="text-xs text-gray-500 italic">Haz clic en los puntos interactivos para ver la solución recomendada.</p>
+                        <div id="zone-tech" class="mt-4 flex gap-2"></div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 w-full">
+                    <div class="map-container rounded-3xl p-4 shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-4 left-4 z-10">
+                            <span class="bg-black/80 text-[9px] font-tech text-gray-400 px-3 py-1 rounded-full border border-white/10 italic">Interactive Radar Map v2.0</span>
+                        </div>
+                        <!-- SVG MAP -->
+                        <svg viewBox="0 0 800 500" class="w-full h-auto drop-shadow-2xl">
+                            <!-- Background Sea -->
+                            <path d="M0,0 L800,0 L800,200 Q400,250 0,200 Z" fill="#001a2e" />
+                            <!-- Land -->
+                            <path d="M0,200 Q400,250 800,200 L800,500 L0,500 Z" fill="#0c0c0c" />
+                            <!-- Port Docks -->
+                            <rect x="150" y="160" width="40" height="120" fill="#1a1a1a" stroke="#333" />
+                            <rect x="250" y="180" width="40" height="120" fill="#1a1a1a" stroke="#333" />
+                            <rect x="350" y="195" width="40" height="120" fill="#1a1a1a" stroke="#333" />
+                            <!-- Refinery Outline -->
+                            <path d="M500,250 L750,250 L780,450 L480,450 Z" fill="#151515" stroke="#006b3f" stroke-width="2" stroke-dasharray="5,5" />
+                            <text x="630" y="360" fill="#006b3f" font-family="Orbitron" font-size="10" text-anchor="middle" opacity="0.5">REFINERÍA OLMECA</text>
+                            
+                            <!-- Hotspots -->
+                            <g class="map-hotspot" onclick="showZone('muelles')">
+                                <circle cx="270" cy="180" r="10" fill="rgba(0, 107, 63, 0.6)" />
+                                <circle cx="270" cy="180" r="4" fill="white" />
+                                <text x="270" y="160" fill="white" font-size="10" text-anchor="middle" font-family="Montserrat">Zona Portuaria</text>
+                            </g>
+                            
+                            <g class="map-hotspot" onclick="showZone('refineria')">
+                                <circle cx="630" cy="320" r="10" fill="rgba(0, 107, 63, 0.6)" />
+                                <circle cx="630" cy="320" r="4" fill="white" />
+                                <text x="630" y="300" fill="white" font-size="10" text-anchor="middle" font-family="Montserrat">Core Refinería</text>
+                            </g>
+
+                            <g class="map-hotspot" onclick="showZone('industrial')">
+                                <circle cx="100" cy="400" r="10" fill="rgba(0, 107, 63, 0.6)" />
+                                <circle cx="100" cy="400" r="4" fill="white" />
+                                <text x="100" y="380" fill="white" font-size="10" text-anchor="middle" font-family="Montserrat">Parque Industrial</text>
+                            </g>
+
+                            <g class="map-hotspot" onclick="showZone('offshore')">
+                                <circle cx="500" cy="100" r="10" fill="rgba(0, 210, 255, 0.6)" />
+                                <circle cx="500" cy="100" r="4" fill="white" />
+                                <text x="500" y="80" fill="white" font-size="10" text-anchor="middle" font-family="Montserrat">Zona Offshore</text>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologías Section -->
+    <section id="tecnologias" class="py-24 bg-zinc-950 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-tech mb-4 uppercase">Ingeniería de Enlace</h2>
+                <p class="text-gray-500">Nuestros cuatro pilares de conectividad.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="service-card p-8 rounded-2xl">
+                    <div class="mb-6"><i class="fa-solid fa-link-slash text-3xl text-tech-blue"></i></div>
+                    <span class="tech-tag">Hyperbond</span>
+                    <h3 class="text-xl font-bold mt-4 mb-2">Redundancia Total</h3>
+                    <p class="text-sm text-gray-400 mb-6">Suma de enlaces de distintos proveedores en una sola sesión IP persistente.</p>
+                </div>
+                <div class="service-card p-8 rounded-2xl">
+                    <div class="mb-6"><i class="fa-solid fa-network-wired text-3xl text-orange-500"></i></div>
+                    <span class="tech-tag" style="background: rgba(249,115,22,0.1); color: #f97316;">S-WAN</span>
+                    <h3 class="text-xl font-bold mt-4 mb-2">Gestión Inteligente</h3>
+                    <p class="text-sm text-gray-400 mb-6">Optimización de tráfico basada en software para empresas con múltiples sedes.</p>
+                </div>
+                <div class="service-card p-8 rounded-2xl">
+                    <div class="mb-6"><i class="fa-solid fa-bolt text-3xl text-yellow-500"></i></div>
+                    <span class="tech-tag" style="background: rgba(234,179,8,0.1); color: #eab308;">Fibra</span>
+                    <h3 class="text-xl font-bold mt-4 mb-2">Capacidad Pura</h3>
+                    <p class="text-sm text-gray-400 mb-6">Simetría 1:1 y latencias mínimas hacia los principales backbones.</p>
+                </div>
+                <div class="service-card p-8 rounded-2xl">
+                    <div class="mb-6"><i class="fa-solid fa-tower-broadcast text-3xl text-tabasco-green"></i></div>
+                    <span class="tech-tag" style="background: rgba(0,107,63,0.1); color: var(--tabasco-green);">Microonda</span>
+                    <h3 class="text-xl font-bold mt-4 mb-2">Acceso Remoto</h3>
+                    <p class="text-sm text-gray-400 mb-6">Radioenlaces de microondas con alta tolerancia a la interferencia salina.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional AI Consultant -->
+    <section id="ai-consultant" class="py-24 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-zinc-900 rounded-[2rem] overflow-hidden shadow-2xl flex flex-col md:flex-row border border-white/10">
+                <div class="md:w-1/3 bg-tabasco-green p-12 flex flex-col justify-center items-center text-center">
+                    <i class="fa-solid fa-robot text-6xl text-white mb-4"></i>
+                    <h3 class="font-tech text-xl text-white leading-tight">ASESOR IA <br>TABASCO</h3>
+                </div>
+                <div class="md:w-2/3 p-8 md:p-12">
+                    <p class="text-gray-400 mb-6 text-sm italic">¿Necesitas internet en Dos Bocas o Villahermosa? Analizaré la factibilidad técnica para ti.</p>
+                    <textarea id="ai-input" rows="3" class="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-white focus:border-tech-blue outline-none transition mb-4 text-sm" placeholder="Ej: Busco una conexión redundante para el puerto de Dos Bocas..."></textarea>
+                    <button onclick="askAI()" id="ai-btn" class="w-full py-4 bg-white text-black font-tech text-xs uppercase tracking-widest rounded-xl hover:bg-tech-blue hover:text-white transition">Consultar Ingeniería ✨</button>
+                    <div id="ai-output" class="hidden mt-6 p-6 bg-black/60 rounded-xl text-gray-300 text-sm italic border-l-2 border-tech-blue"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-black border-t border-white/5">
+        <div class="container mx-auto px-6 text-center">
+            <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" alt="Ciberall" class="h-8 mx-auto mb-6">
+            <p class="text-xs text-gray-600 mb-8 max-w-lg mx-auto">
+                Especialistas en soluciones de conectividad para el sector Oil & Gas. <br>
+                Soporte técnico 24/7 con bases operativas en Villahermosa y Paraíso.
+            </p>
+            <div class="flex justify-center gap-6 text-sm">
+                <a href="tel:+529992090385" class="hover:text-tech-blue"><i class="fa-solid fa-phone mr-2"></i> 999 209 0385</a>
+                <a href="https://wa.me/525511264765" class="hover:text-green-500"><i class="fa-brands fa-whatsapp mr-2"></i> Ventas</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Zone Data for Map
+        const zones = {
+            muelles: {
+                title: "Terminal Marítima (Muelles)",
+                desc: "Zona de alta salinidad y movimiento constante. Recomendamos Microonda + Red Hyperbond para asegurar operatividad de buques y logística.",
+                tech: ["Microonda", "Hyperbond"]
+            },
+            refineria: {
+                title: "Refinería Olmeca (Core)",
+                desc: "Zona crítica de misión. Conectividad vía Fibra Óptica Dedicada con respaldo S-WAN para telemetría y control de procesos.",
+                tech: ["Fibra", "S-WAN", "Hyperbond"]
+            },
+            industrial: {
+                title: "Parque Industrial Anexo",
+                desc: "Ideal para oficinas corporativas y logística terrestre. Disponibilidad inmediata de Fibra Óptica y S-WAN para VPNs seguras.",
+                tech: ["Fibra", "S-WAN"]
+            },
+            offshore: {
+                title: "Zona de Fondeo (Offshore)",
+                desc: "Conectividad para embarcaciones fondeadas. Soluciones satelitales integradas a la Red Hyperbond para estabilidad en movimiento.",
+                tech: ["Satélite", "Hyperbond"]
+            }
+        };
+
+        function showZone(zoneId) {
+            const info = zones[zoneId];
+            document.getElementById('zone-title').innerText = info.title;
+            document.getElementById('zone-desc').innerText = info.desc;
+            
+            const techContainer = document.getElementById('zone-tech');
+            techContainer.innerHTML = '';
+            info.tech.forEach(t => {
+                const span = document.createElement('span');
+                span.className = "text-[9px] bg-white/10 px-2 py-1 rounded text-tech-blue font-bold uppercase";
+                span.innerText = t;
+                techContainer.appendChild(span);
+            });
+
+            // Highlight animation effect
+            document.getElementById('zone-info').style.backgroundColor = 'rgba(0, 107, 63, 0.2)';
+            setTimeout(() => {
+                document.getElementById('zone-info').style.backgroundColor = 'rgba(255, 255, 255, 0.03)';
+            }, 300);
+        }
+
+        // Gemini AI Consultant
+        const apiKey = "";
+        const endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent";
+
+        async function askAI() {
+            const input = document.getElementById('ai-input').value;
+            const btn = document.getElementById('ai-btn');
+            const output = document.getElementById('ai-output');
+
+            if (!input) return;
+
+            btn.disabled = true;
+            btn.innerHTML = "Consultando radar de red... <i class='fa-solid fa-spinner animate-spin'></i>";
+            output.classList.remove('hidden');
+            output.innerText = "Analizando topografía y cobertura en Tabasco...";
+
+            try {
+                const response = await fetch(`${endpoint}?key=${apiKey}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: input }] }],
+                        systemInstruction: { 
+                            parts: [{ text: "Eres el experto en conectividad de Ciberall para Villahermosa y el Puerto de Dos Bocas. Responde de forma técnica y estratégica. Explica por qué para Dos Bocas es crucial la Red Hyperbond (redundancia) y la Microonda (debido a la salinidad que a veces afecta cables). En Villahermosa resalta la Fibra Óptica en Tabasco 2000. Sé breve, profesional y convincente." }] 
+                        }
+                    })
+                });
+
+                const data = await response.json();
+                const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "Servicio temporalmente no disponible.";
+                output.innerText = text;
+            } catch (e) {
+                output.innerText = "Error de red. Contacta al soporte técnico corporativo.";
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = "Consultar Ingeniería ✨";
+            }
+        }
+    </script>
+</body>
+</html>

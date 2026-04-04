@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta SEO -->
+    <title>Internet para Negocios - Zona Nacajuca, Tabasco | Ciberall</title>
+    <meta name="description" content="Conectividad de alta velocidad para empresas en Nacajuca, Tabasco. Internet Dedicado y Red Hyperbond.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --tabasco-green: #006b3f;
+            --tech-blue: #00d2ff;
+            --oil-black: #0a0a0a;
+            --nacajuca-clay: #d17a22;
+        }
+
+        body {
+            background-color: var(--oil-black);
+            color: #e0e0e0;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .font-tech { font-family: 'Orbitron', sans-serif; }
+
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10, 0.9) 100%);
+        }
+
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(209, 122, 34, 0.3);
+        }
+
+        .form-input {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: 0.3s;
+        }
+
+        .form-input:focus {
+            border-color: var(--nacajuca-clay);
+            background: rgba(255, 255, 255, 0.07);
+            outline: none;
+            box-shadow: 0 0 15px rgba(209, 122, 34, 0.2);
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, var(--nacajuca-clay), #e68a2e);
+            color: white;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.02);
+        }
+
+        /* Animación suave para el texto */
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: var(--nacajuca-clay); border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" alt="Ciberall" class="h-8">
+                <span class="hidden md:block border-l border-white/20 pl-3 font-tech text-[9px] tracking-widest text-gray-400 uppercase">Nacajuca Business Hub</span>
+            </div>
+            <div class="hidden lg:flex gap-8 text-[10px] font-tech tracking-widest uppercase">
+                <a href="#planes" class="hover:text-orange-400 transition">Planes</a>
+                <a href="#contacto" class="text-orange-400">Contacto</a>
+                <a href="#ai-consultant" class="text-tech-blue">Consultoría IA ✨</a>
+            </div>
+            <a href="https://wa.me/525511264765" class="bg-green-600 px-5 py-2 rounded-md font-bold text-xs uppercase tracking-widest flex items-center gap-2">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section con Torre de Telecomunicaciones -->
+    <header class="relative min-h-screen flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 hero-overlay z-10"></div>
+            <!-- Imagen de torre de telecomunicaciones -->
+            <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&q=80&w=1920" alt="Torre de Telecomunicaciones Nacajuca" class="w-full h-full object-cover scale-105">
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-20 pt-20">
+            <div class="max-w-4xl fade-in-up">
+                <div class="inline-block bg-orange-600/20 border border-orange-500/50 px-4 py-1 rounded-full text-[10px] font-tech text-orange-400 mb-6 uppercase tracking-widest">
+                    Infraestructura de Grado Carrier
+                </div>
+                <h1 class="text-5xl md:text-7xl font-tech font-extrabold mb-6 leading-none tracking-tighter">
+                    INTERNET PARA NEGOCIOS<br>
+                    <span class="text-orange-500">ZONA NACAJUCA, TABASCO</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-2xl border-l-4 border-orange-500 pl-6 mb-10 font-light">
+                    Conectividad simétrica y dedicada diseñada para la industria, el comercio y el sector público de la región.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contacto" class="btn-primary px-8 py-4 rounded-xl font-tech text-xs uppercase tracking-widest">Solicitar Factibilidad</a>
+                    <a href="#planes" class="bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4 rounded-xl font-tech text-xs uppercase tracking-widest hover:bg-white hover:text-black transition">Ver Planes</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Planes y Formulario (Integrados) -->
+    <section id="planes" class="py-24 bg-zinc-950 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-tech mb-4 uppercase tracking-widest">Soluciones de <span class="text-orange-500">Alto Rendimiento</span></h2>
+                <p class="text-gray-500">Enlaces 100% dedicados con monitoreo proactivo.</p>
+            </div>
+
+            <!-- El formulario y contacto se mantienen aquí -->
+            <div id="contacto" class="flex flex-col lg:flex-row gap-16 mt-20">
+                <!-- Info Column -->
+                <div class="lg:w-1/3">
+                    <h2 class="text-2xl font-tech mb-8 uppercase tracking-widest">Canales de <br><span class="text-orange-500">Atención</span></h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-orange-500/10 flex items-center justify-center text-orange-500 shrink-0">
+                                <i class="fas fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-[10px] font-tech text-gray-500 uppercase tracking-widest">PBX y SMS</h4>
+                                <p class="text-white font-bold">(+52) 999-209-0385</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-orange-500/10 flex items-center justify-center text-orange-500 shrink-0">
+                                <i class="fas fa-envelope-open-text"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-[10px] font-tech text-gray-500 uppercase tracking-widest">Atención Digital</h4>
+                                <p class="text-white font-bold">hola@ciberall.com</p>
+                                <p class="text-orange-500 text-[10px]">55-4162-9630</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-500 shrink-0">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-[10px] font-tech text-gray-500 uppercase tracking-widest">WhatsApp Directo</h4>
+                                <p class="text-white font-bold">55-3964-8280</p>
+                                <p class="text-white font-bold">55-1126-4765</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:w-2/3">
+                    <div class="bg-black p-8 md:p-12 rounded-[2.5rem] border border-white/5 shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10">
+                            <i class="fas fa-satellite-dish text-8xl text-white"></i>
+                        </div>
+                        <form action="https://formspree.io/f/xkogdrn" method="POST" class="relative z-10 space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <input type="text" name="nombre" required class="w-full form-input p-4 rounded-xl text-sm" placeholder="Nombre / Razón Social">
+                                <input type="email" name="email" required class="w-full form-input p-4 rounded-xl text-sm" placeholder="Email Corporativo">
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <input type="tel" name="telefono" required class="w-full form-input p-4 rounded-xl text-sm" placeholder="WhatsApp / Teléfono">
+                                <input type="text" name="ubicacion" required class="w-full form-input p-4 rounded-xl text-sm" placeholder="Ubicación en Nacajuca">
+                            </div>
+                            <textarea name="mensaje" rows="4" required class="w-full form-input p-4 rounded-xl text-sm" placeholder="¿Qué velocidad requiere su negocio?"></textarea>
+                            <button type="submit" class="w-full btn-primary py-5 rounded-xl font-tech text-xs uppercase tracking-[0.2em] shadow-xl shadow-orange-900/20">
+                                Enviar Solicitud de Factibilidad
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-20 pb-10 border-t border-white/5">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-12">
+                <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" alt="Ciberall" class="h-6 mx-auto mb-6 opacity-60">
+                <p class="text-[11px] font-tech text-gray-400 uppercase tracking-[0.3em]">
+                    2026 - CiBER ALL ® INTERNET S DE RL DE CV "THE INTERNET COMPANY"
+                </p>
+                <div class="mt-4 space-x-6 text-[10px] text-gray-600 uppercase tracking-widest">
+                    <a href="https://www.ciberall.com/politica-privacidad/" class="hover:text-orange-500 transition">Política de Privacidad</a>
+                    <span>|</span>
+                    <a href="https://lonso.net/" class="hover:text-white transition">Edición: Studio Lonso</a>
+                </div>
+            </div>
+            <div class="flex justify-center items-center gap-2 opacity-30">
+                <span class="text-[8px] uppercase font-tech">Powered by,</span>
+                <a href="https://ciberall.com/" class="text-[10px] font-bold text-white">CiBERALL ®</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
